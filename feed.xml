@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Francesco Dulio</title>
+    <description></description>
+    <link>http://adrenocortico.github.com/</link>
+    <atom:link href="http://adrenocortico.github.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 21 Jan 2016 12:15:48 +0100</pubDate>
+    <lastBuildDate>Thu, 21 Jan 2016 12:15:48 +0100</lastBuildDate>
+    <generator>Jekyll v3.0.2</generator>
+    
+      <item>
+        <title>Stay So</title>
+        <description>&lt;p class=&quot;content__item-center&quot;&gt;
+The official app made for Azione Cattolica Ambrosiana for the Lent and the Advent.
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;content__item-img-center animated zoomIn&quot; src=&quot;/images/stayso/stayso.png&quot; alt=&quot;Stay So&quot; /&gt;&lt;/p&gt;
+
+&lt;p class=&quot;content__item-center&quot;&gt;
+This is an initiative of Azione Cattolica Studenti with the gospel of the day, the weekly path of Lent and Advent 2015, with readings, insights and opportunities for discussion.
+&lt;/p&gt;
+
+&lt;h3 id=&quot;section_title&quot;&gt;Download&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot; https://itunes.apple.com/it/app/stay-so/id968034731?mt=8 &quot;&gt;&lt;img class=&quot;content__item-img-center&quot; src=&quot;/images/app_store.png&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot; https://play.google.com/store/apps/details?id=com.goodbarber.stayso&amp;amp;hl=it &quot;&gt;&lt;img class=&quot;content__item-img-center&quot; src=&quot;/images/playstore.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 14 Jan 2016 10:34:58 +0100</pubDate>
+        <link>http://adrenocortico.github.com/stayso</link>
+        <guid isPermaLink="true">http://adrenocortico.github.com/stayso</guid>
+        
+        
+        <category>mobile</category>
+        
+      </item>
+    
+      <item>
+        <title>FUCIup</title>
+        <description>&lt;p class=&quot;content__item-center&quot;&gt;
+The official app of Federazione Universitaria Cattolica Italiana.
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;content__item-img-center animated zoomIn&quot; src=&quot;/images/fuciup/fuciup.png&quot; alt=&quot;FUCIup&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section_title&quot;&gt;Download&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot; https://itunes.apple.com/it/app/fuciup/id938655816?mt=8 &quot;&gt;&lt;img class=&quot;content__item-img-center&quot; src=&quot;/images/app_store.png&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot; https://play.google.com/store/apps/details?id=com.conduit.app_b5680961d0864cababaab89c773a2d43.app&amp;amp;hl=it &quot;&gt;&lt;img class=&quot;content__item-img-center&quot; src=&quot;/images/playstore.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 13 Jan 2016 10:33:58 +0100</pubDate>
+        <link>http://adrenocortico.github.com/fuciup</link>
+        <guid isPermaLink="true">http://adrenocortico.github.com/fuciup</guid>
+        
+        
+        <category>mobile</category>
+        
+      </item>
+    
+  </channel>
+</rss>
