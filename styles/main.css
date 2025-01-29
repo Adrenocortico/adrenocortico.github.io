@@ -1,10 +1,13 @@
 :root {
-    --primary-color: #2c3e50;
-    --secondary-color: #3498db;
-    --text-color: #333;
-    --background-color: #f9f9f9;
-    --accent-color: #e74c3c;
+    --primary-color: #065446;          /* Dark emerald green */
+    --secondary-color: #0047AB;        /* Cobalt blue */
+    --accent-color: #FF5733;          /* Vibrant orange */
+    --complementary-green: #54065F;    /* Complementary to emerald */
+    --complementary-blue: #AB4700;     /* Complementary to cobalt */
+    --text-color: #2C3E50;
+    --background-color: #f8f9fa;
     --card-background: #ffffff;
+    --highlight-color: #FFB347;        /* Soft orange for highlights */
 }
 
 * {
@@ -56,7 +59,7 @@ nav {
 }
 
 .nav-links a:hover {
-    color: var(--secondary-color);
+    color: var(--highlight-color);
 }
 
 .hero {
@@ -73,8 +76,9 @@ nav {
 
 .hero .highlight {
     font-size: 1.5rem;
-    color: #ffd700;
+    color: var(--highlight-color);
     margin-bottom: 1rem;
+    font-weight: 600;
 }
 
 .hero .tagline {
@@ -95,12 +99,13 @@ nav {
     background-color: var(--card-background);
     border-radius: 10px;
     padding: 1.5rem;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+    box-shadow: 0 2px 10px rgba(6, 84, 70, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(6, 84, 70, 0.2);
 }
 
 .card h2 {
@@ -127,7 +132,7 @@ nav {
 }
 
 .feature-list i {
-    color: var(--secondary-color);
+    color: var(--accent-color);
     width: 20px;
 }
 
