@@ -1,29 +1,29 @@
-# Portfolio Personale di Francesco
+# Francesco Dulio's Personal Portfolio
 
-Questo è il repository del mio sito web personale, ospitato su GitHub Pages. Il sito presenta le mie diverse attività e interessi professionali, tra cui:
+This is the repository for my personal website, hosted on GitHub Pages. The site showcases my various professional activities and interests, including:
 
-- 🛡️ Assicurazioni
-- 💼 Imprenditoria
-- 💻 Sviluppo Software
-- ⛪ Attività nella Chiesa
-- 📈 Finanza Personale
-- 🚀 Progetti
+- 🛡️ Insurance
+- 💼 Entrepreneurship
+- 💻 Software Development
+- ⛪ Church Activities
+- 📈 Finance
+- 🚀 Projects
 
-## Struttura del Sito
+## Website Structure
 
-- `index.html`: Homepage principale
-- `styles/`: Contiene i file CSS
-- `scripts/`: Contiene i file JavaScript
-- `images/`: Contiene le immagini e i media
+- `index.html`: Main homepage
+- `styles/`: Contains CSS files
+- `scripts/`: Contains JavaScript files
+- `images/`: Contains images and media
 
-## Tecnologie Utilizzate
+## Technologies Used
 
 - HTML5
 - CSS3
 - JavaScript
-- Font Awesome per le icone
-- GitHub Pages per l'hosting
+- Font Awesome for icons
+- GitHub Pages for hosting
 
-## Come Visualizzare il Sito
+## How to View the Site
 
-Il sito è accessibile all'indirizzo: https://francesco.github.io
+The site is accessible at: https://francesco.github.io
