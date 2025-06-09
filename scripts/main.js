@@ -58,8 +58,9 @@ function initializeCardAnimations() {
 
 // Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
-    loadComponent('header', '/components/header.html');
-    loadComponent('footer', '/components/footer.html');
+    // Use relative paths so the site works when served from any base URL
+    loadComponent('header', 'components/header.html');
+    loadComponent('footer', 'components/footer.html');
     initializeSmoothScroll();
     initializeCardAnimations();
 });
