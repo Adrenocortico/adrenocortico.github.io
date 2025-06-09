@@ -14,7 +14,6 @@ This is the repository for my personal website, hosted on GitHub Pages. The site
 - `index.html`: Main homepage
 - `styles/`: Contains CSS files
 - `scripts/`: Contains JavaScript files
-- `images/`: Contains images and media
 
 ## Technologies Used
 
@@ -26,4 +25,4 @@ This is the repository for my personal website, hosted on GitHub Pages. The site
 
 ## How to View the Site
 
-The site is accessible at: https://francesco.github.io
+The site is accessible at: https://adrenocortico.github.io
