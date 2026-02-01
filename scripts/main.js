@@ -54,6 +54,10 @@ async function loadComponent(elementId, componentPath) {
             initializeMobileMenu();
             initializeHeaderScroll();
         }
+
+        if (elementId === 'footer') {
+            updateFooterYear();
+        }
     } catch (error) {
         console.error(`Error loading ${componentPath}:`, error);
     }
@@ -62,6 +66,13 @@ async function loadComponent(elementId, componentPath) {
 function initializeComponents() {
     loadComponent('header', 'components/header.html');
     loadComponent('footer', 'components/footer.html');
+}
+
+function updateFooterYear() {
+    const yearElement = document.getElementById('current-year');
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
 }
 
 // ===============================================
