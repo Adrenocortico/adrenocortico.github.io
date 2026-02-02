@@ -102,17 +102,25 @@ function initializeNavigation() {
 // MOBILE MENU
 // ===============================================
 
+let mobileMenuInitialized = false;
+
 function initializeMobileMenu() {
+    // Prevent adding multiple listeners
+    if (mobileMenuInitialized) return;
+    mobileMenuInitialized = true;
+
     // Use event delegation for dynamically loaded content
     document.addEventListener('click', (e) => {
         const menuToggle = e.target.closest('.menu-toggle');
         const navLink = e.target.closest('.nav-links a');
+        const langBtn = e.target.closest('.lang-btn');
 
         if (menuToggle) {
             toggleMobileMenu();
         }
 
-        if (navLink && window.innerWidth <= 768) {
+        // Close menu when clicking nav links (but not language buttons)
+        if (navLink && !langBtn && window.innerWidth <= 768) {
             closeMobileMenu();
         }
     });
