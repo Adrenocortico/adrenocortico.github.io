@@ -195,36 +195,86 @@
   },
   "projects": {
     "heroOpening": "Trasformare le idee in sistemi.",
-    "heroSupporting": "I progetti sono dove la visione incontra l'esecuzione. Mi concentro sul costruire cose che risolvono problemi reali—dalle piattaforme tecnologiche alle iniziative comunitarie.",
+    "heroSupporting": "Questa pagina non è un portfolio di esperimenti.",
+    "title": "Progetti",
+    "introLine1": "È una selezione di sistemi reali che ho costruito, guidato o a cui ho contribuito,",
+    "introLine2": "in contesti in cui ambiguità, responsabilità e conseguenze reali erano presenti.",
     "currentFocus": "Focus attuale",
     "currentFocusList": [
-      "Sviluppo piattaforma StayActive",
-      "Soluzioni di automazione guidate dall'AI",
-      "Innovazioni pastorali digitali",
-      "Integrazione di tecnologie assicurative"
+      "Serve allineare più stakeholder",
+      "La struttura è incompleta o in evoluzione",
+      "Le decisioni hanno peso operativo, reputazionale o economico",
+      "La sostenibilità di lungo termine conta più della visibilità a breve"
     ],
-    "innovationAreas": "Aree di innovazione",
-    "innovationAreasList": [
-      "Applicazioni AI e Machine Learning",
-      "Automazione dei processi per workflow complessi",
-      "Trasformazione digitale in industrie tradizionali",
-      "Piattaforme di coinvolgimento della comunità"
+    "examplesTitle": "Esempi di sistemi reali",
+    "palioTitle": "Palio di Vigevano",
+    "palioIntro": "Un grande evento storico e culturale con forte esposizione pubblica, in un contesto non gerarchico e altamente variabile.",
+    "palioSystemInvolves": "Il sistema coinvolge:",
+    "palioSystemList": [
+      "Istituzioni pubbliche",
+      "Sponsor e fondazioni",
+      "Decine di volontari e collaboratori",
+      "Migliaia di partecipanti e visitatori"
     ],
-    "signature": "Tecnologia finanziaria.<br>Innovazione sanitaria.<br>Tecnologia educativa.<br>Costruire dove conta di più.",
-    "concreteExample": "Un esempio concreto",
-    "concreteExampleIntro": "Il Palio di Vigevano è un evento culturale storico con forte esposizione pubblica e un ecosistema complesso di stakeholder.",
-    "concreteExampleList": [
-      "Istituzioni pubbliche, sponsor, volontari, migliaia di partecipanti",
-      "Contesto non gerarchico con alta variabilità",
-      "Rischio reputazionale e logistico concreto",
-      "Tenere insieme visione e realizzazione, anno dopo anno"
+    "palioContext": "Il contesto include rischi logistici, organizzativi e reputazionali reali.",
+    "palioRoleIntro": "Il mio ruolo è:",
+    "palioRoleList": [
+      "Tenere insieme visione ed esecuzione",
+      "Assumere responsabilità dove manca una struttura formale",
+      "Abilitare il coordinamento tra attori molto diversi",
+      "Garantire continuità e affidabilità anno dopo anno"
     ],
-    "communityImpact": "Impatto sulla comunità",
-    "communityImpactList": [
-      "Programmi di mentorship per i giovani",
-      "Iniziative di alfabetizzazione digitale",
-      "Progetti di modernizzazione della Chiesa",
-      "Educazione tecnologica per tutte le età"
-    ]
+    "palioClosing": "È un esempio di leadership senza autorità formale, applicata su scala reale.",
+    "stayActiveTitle": "StayActive (progetto chiuso)",
+    "stayActiveIntro": "StayActive era una startup all’intersezione tra tecnologia, salute e cambiamento comportamentale.",
+    "stayActiveClosed": "Il progetto è chiuso, ma resta un’esperienza formativa.",
+    "stayActiveRoleIntro": "Ho guidato l’iniziativa end-to-end:",
+    "stayActiveRoleList": [
+      "Dalla visione e definizione del prodotto",
+      "All’esecuzione, alle partnership e al posizionamento esterno"
+    ],
+    "stayActiveChallengesIntro": "Il lavoro ha richiesto di gestire:",
+    "stayActiveChallengesList": [
+      "Incertezza e risorse limitate",
+      "Compromessi strategici",
+      "Responsabilità senza garanzie"
+    ],
+    "stayActiveClosing": "StayActive ha modellato il mio approccio alla progettazione dei sistemi, alle decisioni sotto pressione e al costo dei vincoli reali.",
+    "healthcareTitle": "Software sanitario e clinico (ISICO)",
+    "healthcareIntro": "Consulenza all’intersezione tra software e sanità, a supporto dei flussi clinici e riabilitativi.",
+    "healthcareFocusIntro": "Il focus è stato su:",
+    "healthcareFocusList": [
+      "Tradurre bisogni clinici complessi in sistemi utilizzabili",
+      "Manutenibilità di lungo periodo rispetto a funzionalità di breve",
+      "Affidabilità in contesti in cui fiducia e accuratezza sono critiche"
+    ],
+    "healthcareClosing": "Questo lavoro ha rafforzato un approccio orientato ai sistemi in ambienti dove gli errori hanno conseguenze reali.",
+    "insuranceTitle": "Sistemi assicurativi e finanziari",
+    "insuranceIntro": "Coinvolgimento continuativo in organizzazioni assicurative e finanziarie in transizione strutturale e tecnologica.",
+    "insuranceWorkIntro": "Il lavoro in genere include:",
+    "insuranceWorkList": [
+      "Ridisegnare processi dove le strutture legacy non scalano più",
+      "Introdurre automazione e strumenti digitali in modo responsabile",
+      "Supportare decisioni in contesti con esposizione economica"
+    ],
+    "insuranceClosing": "L’enfasi è sempre sul far funzionare i sistemi, non solo sul renderli moderni.",
+    "communityTitle": "Progetti comunitari e pastorali digitali",
+    "communityIntro": "Progettazione e supporto di iniziative digitali in contesti comunitari e di fede.",
+    "communitySystemsIntro": "Questi sistemi spesso operano:",
+    "communitySystemsList": [
+      "Senza autorità formale",
+      "Con volontari invece che dipendenti",
+      "Sotto forti vincoli etici e relazionali"
+    ],
+    "communityClosing": "Offrono una prospettiva diversa ma preziosa su coordinamento, fiducia e coinvolgimento di lungo periodo.",
+    "connectTitle": "Cosa accomuna questi progetti",
+    "connectIntro": "In domini molto diversi, il pattern è costante:",
+    "connectList": [
+      "L’ambiguità è la norma",
+      "La struttura va spesso costruita mentre si procede",
+      "La responsabilità non si può delegare",
+      "I sistemi devono funzionare con persone reali, non ideali"
+    ],
+    "connectClosing": "È lì che tendo a operare al meglio."
   }
 }

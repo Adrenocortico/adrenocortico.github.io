@@ -195,36 +195,86 @@
   },
   "projects": {
     "heroOpening": "Turning ideas into systems.",
-    "heroSupporting": "Projects are where vision meets execution. I focus on building things that solve real problems—from technology platforms to community initiatives.",
+    "heroSupporting": "This page is not a portfolio of experiments.",
+    "title": "Projects",
+    "introLine1": "It’s a selection of real systems I have built, led, or contributed to,",
+    "introLine2": "in contexts where ambiguity, responsibility, and real-world consequences were present.",
     "currentFocus": "Current focus",
     "currentFocusList": [
-      "StayActive platform development",
-      "AI-driven automation solutions",
-      "Digital pastoral innovations",
-      "Insurance technology integration"
+      "Multiple stakeholders need alignment",
+      "Structure is incomplete or evolving",
+      "Decisions carry operational, reputational, or economic weight",
+      "Long-term sustainability matters more than short-term visibility"
     ],
-    "innovationAreas": "Innovation areas",
-    "innovationAreasList": [
-      "AI and Machine Learning applications",
-      "Process automation for complex workflows",
-      "Digital transformation in traditional industries",
-      "Community engagement platforms"
+    "examplesTitle": "Examples of real systems",
+    "palioTitle": "Palio of Vigevano",
+    "palioIntro": "A large-scale historical and cultural event with strong public exposure, operating in a non-hierarchical and highly variable environment.",
+    "palioSystemInvolves": "The system involves:",
+    "palioSystemList": [
+      "Public institutions",
+      "Sponsors and foundations",
+      "Dozens of volunteers and contributors",
+      "Thousands of participants and visitors"
     ],
-    "signature": "Financial technology.<br>Healthcare innovation.<br>Educational technology.<br>Building where it matters most.",
-    "concreteExample": "A concrete example",
-    "concreteExampleIntro": "The Palio of Vigevano is a historical cultural event with strong public exposure and a complex ecosystem of stakeholders.",
-    "concreteExampleList": [
-      "Public institutions, sponsors, volunteers, thousands of participants",
-      "Non-hierarchical context with high variability",
-      "Real reputational and logistical risk",
-      "Holding vision and delivery together, year after year"
+    "palioContext": "The context includes real logistical, organizational, and reputational risk.",
+    "palioRoleIntro": "My role is to:",
+    "palioRoleList": [
+      "Hold vision and delivery together",
+      "Take responsibility where formal structure is missing",
+      "Enable coordination across very different actors",
+      "Ensure continuity and reliability year after year"
     ],
-    "communityImpact": "Community impact",
-    "communityImpactList": [
-      "Youth mentorship programs",
-      "Digital literacy initiatives",
-      "Church modernization projects",
-      "Technology education for all ages"
-    ]
+    "palioClosing": "This is an example of leadership without formal authority, applied at real scale.",
+    "stayActiveTitle": "StayActive (closed project)",
+    "stayActiveIntro": "StayActive was a startup operating at the intersection of technology, health, and behavioral change.",
+    "stayActiveClosed": "The project is now closed, but it remains a formative experience.",
+    "stayActiveRoleIntro": "I led the initiative end-to-end:",
+    "stayActiveRoleList": [
+      "From vision and product definition",
+      "To execution, partnerships, and external positioning"
+    ],
+    "stayActiveChallengesIntro": "The work required navigating:",
+    "stayActiveChallengesList": [
+      "Uncertainty and limited resources",
+      "Strategic trade-offs",
+      "Responsibility without guarantees"
+    ],
+    "stayActiveClosing": "StayActive shaped how I approach system design, decision-making under pressure, and the cost of real-world constraints.",
+    "healthcareTitle": "Healthcare & clinical software (ISICO)",
+    "healthcareIntro": "Consulting work at the intersection of software and healthcare, supporting clinical and rehabilitation workflows.",
+    "healthcareFocusIntro": "The focus has been on:",
+    "healthcareFocusList": [
+      "Translating complex clinical needs into usable systems",
+      "Long-term maintainability over short-term features",
+      "Reliability in contexts where trust and accuracy are critical"
+    ],
+    "healthcareClosing": "This work reinforced a system-oriented approach in environments where errors have real consequences.",
+    "insuranceTitle": "Insurance & financial systems",
+    "insuranceIntro": "Ongoing involvement in insurance and financial organizations facing structural and technological transition.",
+    "insuranceWorkIntro": "The work typically involves:",
+    "insuranceWorkList": [
+      "Redesigning processes where legacy structures no longer scale",
+      "Introducing automation and digital tools responsibly",
+      "Supporting decision-making in contexts with economic exposure"
+    ],
+    "insuranceClosing": "The emphasis is always on making systems work, not just making them modern.",
+    "communityTitle": "Community & digital pastoral projects",
+    "communityIntro": "Design and support of digital initiatives within community and faith-based environments.",
+    "communitySystemsIntro": "These systems often operate:",
+    "communitySystemsList": [
+      "Without formal authority",
+      "With volunteers rather than employees",
+      "Under strong ethical and relational constraints"
+    ],
+    "communityClosing": "They provide a different but valuable perspective on coordination, trust, and long-term engagement.",
+    "connectTitle": "What connects these projects",
+    "connectIntro": "Across very different domains, the pattern is consistent:",
+    "connectList": [
+      "Ambiguity is the norm",
+      "Structure must often be built while moving",
+      "Responsibility cannot be delegated away",
+      "Systems must work with real people, not ideal ones"
+    ],
+    "connectClosing": "That’s where I tend to operate best."
   }
 }
