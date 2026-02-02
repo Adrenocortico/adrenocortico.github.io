@@ -1123,3 +1123,60 @@ body.homepage::before {
         gap: var(--space-sm);
     }
 }
+
+/* ===============================================
+   SUBPAGE REFINEMENTS
+   Matching the homepage presence style
+   =============================================== */
+
+/* Subpage-specific body class */
+body.subpage::before {
+    animation: backgroundPulse 30s ease-in-out infinite;
+    opacity: 0.8;
+}
+
+/* Subpage Main Content - Same narrow width as homepage */
+.subpage-main {
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-2xl);
+    max-width: 800px;
+}
+
+/* Section fade-in animations for subpages */
+body.subpage .content-section,
+body.subpage .signature-section,
+body.subpage .explore-section {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInSection 0.6s ease forwards;
+}
+
+body.subpage .content-section:nth-child(1) { animation-delay: 0.1s; }
+body.subpage .content-section:nth-child(2) { animation-delay: 0.2s; }
+body.subpage .signature-section { animation-delay: 0.3s; }
+body.subpage .content-section:nth-child(4) { animation-delay: 0.4s; }
+body.subpage .explore-section { animation-delay: 0.5s; }
+
+@keyframes fadeInSection {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Subpage hero refinement */
+body.subpage .hero.hero-refined {
+    min-height: 70vh;
+}
+
+/* Subpage Responsive */
+@media (max-width: 768px) {
+    body.subpage .hero.hero-refined {
+        min-height: auto;
+        padding: calc(100px + var(--space-lg)) var(--space-md) var(--space-lg);
+    }
+
+    .subpage-main {
+        padding-top: var(--space-lg);
+    }
+}
