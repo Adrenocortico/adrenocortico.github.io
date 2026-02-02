@@ -1,0 +1,221 @@
+{
+  "meta": {
+    "lang": "en",
+    "description": {
+      "index": "Francesco Dulio - Building complex systems in ambiguous contexts. Working at the intersection of vision, decisions, and delivery.",
+      "insurance": "Insurance Innovation - Francesco Dulio. Technology and Trust in Insurance.",
+      "entrepreneurship": "Entrepreneurial Journey - Francesco Dulio. Innovation, Leadership, and Vision.",
+      "software": "Software Development - Francesco Dulio. Code, Innovation, and Problem Solving.",
+      "finance": "Financial Journey - Francesco Dulio. Markets, Innovation, and Digital Assets.",
+      "church": "My Journey in the Church - Francesco Dulio. Faith, Community, and Digital Innovation.",
+      "projects": "Projects & Vision - Francesco Dulio. Innovation, Creativity, and Future Goals."
+    },
+    "title": {
+      "index": "Francesco Dulio",
+      "insurance": "Insurance Innovation - Francesco",
+      "entrepreneurship": "Entrepreneurship Journey - Francesco",
+      "software": "Software Development - Francesco",
+      "finance": "Financial Journey - Francesco",
+      "church": "My Journey in the Church - Francesco",
+      "projects": "Projects & Vision - Francesco"
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "insurance": "Insurance",
+    "entrepreneurship": "Entrepreneurship",
+    "software": "Software",
+    "church": "Church",
+    "finance": "Finance",
+    "projects": "Projects",
+    "toggleMenu": "Toggle menu"
+  },
+  "footer": {
+    "copyright": "Francesco Dulio. Crafted with passion."
+  },
+  "common": {
+    "explore": "Explore"
+  },
+  "index": {
+    "heroOpening": "Building complex systems in ambiguous contexts.",
+    "heroSupporting": "I work at the intersection of vision, decisions, and delivery—where structure is missing and responsibility matters.",
+    "whatIWorkOn": "What I work on",
+    "whatIWorkOnList": [
+      "Multi-stakeholder systems where alignment isn't given",
+      "High ambiguity and variability—where playbooks don't exist",
+      "Decisions with real consequences, not theoretical exercises",
+      "Systems that need structure, not noise"
+    ],
+    "howIWork": "How I work",
+    "howIWorkList": [
+      "I take ownership of outcomes, not just tasks",
+      "I make decisions when information is incomplete",
+      "I build for durability, not demonstration",
+      "I say no to things that don't matter"
+    ],
+    "signature": "Physics mindset.<br>Piano discipline.<br>Always asking why.<br>Building for passion, not noise.",
+    "family": "Family",
+    "familyText": "Married to Sara. Father of Chiara and Rachele.",
+    "faith": "Faith",
+    "faithText": "At church every Sunday. Educator for young people.",
+    "elsewhere": "Elsewhere",
+    "elsewhereText": "Mountains. Piano. Photography.",
+    "signal": "Forbes Top 100 Under 30 Italy"
+  },
+  "insurance": {
+    "heroOpening": "Bringing clarity to protection.",
+    "heroSupporting": "Insurance is trust translated into systems. I work on bridging traditional values with modern tools—making protection more accessible without losing what matters.",
+    "myApproach": "My approach",
+    "myApproachList": [
+      "Traditional protection values combined with innovative technology",
+      "Making insurance more accessible and understandable",
+      "Building efficient digital solutions that serve real needs",
+      "Putting transparency at the center of every interaction"
+    ],
+    "techIntegration": "Technology integration",
+    "techIntegrationList": [
+      "AI-driven risk assessment for better accuracy",
+      "Digital claims processing that respects people's time",
+      "Smart contract implementation for transparent agreements",
+      "Data analytics that improves coverage, not just profits"
+    ],
+    "signature": "Personalized solutions.<br>Transparent communication.<br>Continuous support.<br>Protection that evolves with life.",
+    "lookingAhead": "Looking ahead",
+    "lookingAheadList": [
+      "Digital innovation that serves human needs",
+      "Process automation without losing the personal touch",
+      "Customer experience that builds trust over time",
+      "Risk management that adapts to a changing world"
+    ]
+  },
+  "entrepreneurship": {
+    "heroOpening": "Building what doesn't exist yet.",
+    "heroSupporting": "Entrepreneurship is about creating meaningful impact in spaces where others see only problems. I focus on technology that solves real needs, not just theoretical ones.",
+    "stayActive": "StayActive",
+    "stayActiveList": [
+      "CEO leading innovation initiatives",
+      "Combining technology with practical solutions",
+      "Creating meaningful impact through action",
+      "Building systems that last beyond the hype"
+    ],
+    "howIBuild": "How I build",
+    "howIBuildList": [
+      "Identifying opportunities others overlook",
+      "Creating sustainable solutions, not quick fixes",
+      "Building strong teams with shared values",
+      "Driving change that matters, not just change"
+    ],
+    "signature": "Data-driven decisions.<br>Agile methodology.<br>Customer-centric approach.<br>Continuous innovation without noise.",
+    "teamPhilosophy": "Team philosophy",
+    "teamPhilosophyList": [
+      "Shared vision and values as the foundation",
+      "Empowerment and trust over micromanagement",
+      "Continuous learning as a way of working",
+      "Open communication without hierarchy barriers"
+    ]
+  },
+  "software": {
+    "heroOpening": "Code as a means, not an end.",
+    "heroSupporting": "I write software to solve real problems—automating what's tedious, connecting what's fragmented, and building what doesn't exist yet.",
+    "philosophy": "Philosophy",
+    "philosophyList": [
+      "Focus on automation and efficiency",
+      "Practical solutions with innovative technology",
+      "Solving real-world problems, not theoretical exercises",
+      "Building for durability, not demonstration"
+    ],
+    "techStack": "Tech stack",
+    "techStackList": [
+      "Python for automation and machine learning",
+      "Swift for iOS development",
+      "Bash for system scripting",
+      "AI and ML frameworks for intelligent solutions"
+    ],
+    "signature": "Process automation.<br>AI integration.<br>Workflow optimization.<br>Systems that work while you sleep.",
+    "whatIBuild": "What I build",
+    "whatIBuildList": [
+      "Custom automation solutions for complex workflows",
+      "AI-powered applications that learn and adapt",
+      "Digital transformation tools for traditional industries",
+      "Integration systems that connect disparate platforms"
+    ]
+  },
+  "finance": {
+    "heroOpening": "Understanding money as a system.",
+    "heroSupporting": "Finance is where risk meets opportunity. I approach markets with analytical rigor, technological tools, and a long-term perspective that looks beyond daily noise.",
+    "financialMarkets": "Financial markets",
+    "financialMarketsList": [
+      "Traditional analysis enhanced with modern technology",
+      "Exploring new opportunities with careful evaluation",
+      "Building sustainable growth strategies",
+      "Understanding risk before seeking return"
+    ],
+    "digitalAssets": "Digital assets",
+    "digitalAssetsList": [
+      "Cryptocurrency markets and emerging trends",
+      "NFT technology and practical applications",
+      "Blockchain innovations beyond the hype",
+      "DeFi opportunities with measured approach"
+    ],
+    "signature": "AI-driven analysis.<br>Systematic approaches.<br>Risk-aware decisions.<br>Long-term thinking in short-term markets.",
+    "riskManagement": "Risk management",
+    "riskManagementList": [
+      "Portfolio diversification as a foundation",
+      "Risk assessment before opportunity assessment",
+      "Market analysis that acknowledges uncertainty",
+      "Long-term planning with flexibility built in"
+    ]
+  },
+  "church": {
+    "heroOpening": "Faith as foundation, not formality.",
+    "heroSupporting": "The Church is where I find purpose beyond work. I'm committed to bringing traditional values into contemporary contexts—making faith accessible without diluting what matters.",
+    "myRole": "My role",
+    "myRoleList": [
+      "Active participation every Sunday",
+      "Making a difference in the community",
+      "Bridging traditional values with modern approaches",
+      "Building connections that go beyond Sunday"
+    ],
+    "youthEducation": "Youth education",
+    "youthEducationList": [
+      "Working with young people who inspire me",
+      "Helping navigate spiritual journeys with honesty",
+      "Making teachings relevant to contemporary life",
+      "Creating space for questions, not just answers"
+    ],
+    "signature": "Digital pastoral innovation.<br>Faith and technology connected.<br>Community engagement online and offline.<br>Change from within, not from outside.",
+    "visionForChange": "Vision for change",
+    "visionForChangeList": [
+      "Evolving the Church from within, respectfully",
+      "Maintaining core values while adapting methods",
+      "Communication that speaks to today's world",
+      "Building bridges between generations"
+    ]
+  },
+  "projects": {
+    "heroOpening": "Turning ideas into systems.",
+    "heroSupporting": "Projects are where vision meets execution. I focus on building things that solve real problems—from technology platforms to community initiatives.",
+    "currentFocus": "Current focus",
+    "currentFocusList": [
+      "StayActive platform development",
+      "AI-driven automation solutions",
+      "Digital pastoral innovations",
+      "Insurance technology integration"
+    ],
+    "innovationAreas": "Innovation areas",
+    "innovationAreasList": [
+      "AI and Machine Learning applications",
+      "Process automation for complex workflows",
+      "Digital transformation in traditional industries",
+      "Community engagement platforms"
+    ],
+    "signature": "Financial technology.<br>Healthcare innovation.<br>Educational technology.<br>Building where it matters most.",
+    "communityImpact": "Community impact",
+    "communityImpactList": [
+      "Youth mentorship programs",
+      "Digital literacy initiatives",
+      "Church modernization projects",
+      "Technology education for all ages"
+    ]
+  }
+}
