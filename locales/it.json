@@ -1,0 +1,221 @@
+{
+  "meta": {
+    "lang": "it",
+    "description": {
+      "index": "Francesco Dulio - Costruisco sistemi complessi in contesti ambigui. Lavoro all'intersezione tra visione, decisioni e realizzazione.",
+      "insurance": "Innovazione Assicurativa - Francesco Dulio. Tecnologia e Fiducia nel mondo delle Assicurazioni.",
+      "entrepreneurship": "Percorso Imprenditoriale - Francesco Dulio. Innovazione, Leadership e Visione.",
+      "software": "Sviluppo Software - Francesco Dulio. Codice, Innovazione e Problem Solving.",
+      "finance": "Percorso Finanziario - Francesco Dulio. Mercati, Innovazione e Asset Digitali.",
+      "church": "Il Mio Cammino nella Chiesa - Francesco Dulio. Fede, Comunità e Innovazione Digitale.",
+      "projects": "Progetti e Visione - Francesco Dulio. Innovazione, Creatività e Obiettivi Futuri."
+    },
+    "title": {
+      "index": "Francesco Dulio",
+      "insurance": "Innovazione Assicurativa - Francesco",
+      "entrepreneurship": "Percorso Imprenditoriale - Francesco",
+      "software": "Sviluppo Software - Francesco",
+      "finance": "Percorso Finanziario - Francesco",
+      "church": "Il Mio Cammino nella Chiesa - Francesco",
+      "projects": "Progetti e Visione - Francesco"
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "insurance": "Assicurazioni",
+    "entrepreneurship": "Impresa",
+    "software": "Software",
+    "church": "Chiesa",
+    "finance": "Finanza",
+    "projects": "Progetti",
+    "toggleMenu": "Apri menu"
+  },
+  "footer": {
+    "copyright": "Francesco Dulio. Realizzato con dedizione."
+  },
+  "common": {
+    "explore": "Esplora"
+  },
+  "index": {
+    "heroOpening": "Costruisco sistemi complessi dove altri vedono solo caos.",
+    "heroSupporting": "Lavoro dove la struttura manca e la responsabilità pesa. Tra visione e risultati, nelle decisioni che contano.",
+    "whatIWorkOn": "Di cosa mi occupo",
+    "whatIWorkOnList": [
+      "Sistemi con molti interlocutori, dove l'allineamento non è scontato",
+      "Alta incertezza e variabilità—dove i manuali non esistono",
+      "Decisioni con conseguenze reali, non esercizi accademici",
+      "Sistemi che hanno bisogno di ordine, non di rumore"
+    ],
+    "howIWork": "Come lavoro",
+    "howIWorkList": [
+      "Mi assumo la responsabilità dei risultati, non solo dei compiti",
+      "Decido anche quando le informazioni sono incomplete",
+      "Costruisco per durare, non per impressionare",
+      "Dico no a ciò che non conta davvero"
+    ],
+    "signature": "Mentalità da fisico.<br>Disciplina da pianista.<br>Sempre a chiedermi perché.<br>Costruisco per passione, non per apparire.",
+    "family": "Famiglia",
+    "familyText": "Sposato con Sara. Padre di Chiara e Rachele.",
+    "faith": "Fede",
+    "faithText": "In chiesa ogni domenica. Educatore per i giovani.",
+    "elsewhere": "Altrove",
+    "elsewhereText": "Montagna. Pianoforte. Fotografia.",
+    "signal": "Forbes Top 100 Under 30 Italia"
+  },
+  "insurance": {
+    "heroOpening": "Portare chiarezza nella protezione.",
+    "heroSupporting": "L'assicurazione è fiducia tradotta in sistemi. Lavoro per unire i valori tradizionali agli strumenti moderni—rendendo la protezione più accessibile senza perdere ciò che conta.",
+    "myApproach": "Il mio approccio",
+    "myApproachList": [
+      "Valori tradizionali della protezione uniti a tecnologie innovative",
+      "Rendere l'assicurazione più accessibile e comprensibile",
+      "Costruire soluzioni digitali efficienti che servano bisogni reali",
+      "Mettere la trasparenza al centro di ogni interazione"
+    ],
+    "techIntegration": "Integrazione tecnologica",
+    "techIntegrationList": [
+      "Valutazione del rischio guidata dall'AI per maggiore precisione",
+      "Gestione sinistri digitale che rispetta il tempo delle persone",
+      "Implementazione di smart contract per accordi trasparenti",
+      "Analisi dati che migliora la copertura, non solo i profitti"
+    ],
+    "signature": "Soluzioni su misura.<br>Comunicazione trasparente.<br>Supporto continuo.<br>Protezione che evolve con la vita.",
+    "lookingAhead": "Guardando avanti",
+    "lookingAheadList": [
+      "Innovazione digitale al servizio delle persone",
+      "Automazione dei processi senza perdere il tocco umano",
+      "Customer experience che costruisce fiducia nel tempo",
+      "Gestione del rischio che si adatta a un mondo che cambia"
+    ]
+  },
+  "entrepreneurship": {
+    "heroOpening": "Costruire ciò che ancora non esiste.",
+    "heroSupporting": "Essere imprenditori significa creare impatto significativo dove altri vedono solo problemi. Mi concentro su tecnologie che risolvono bisogni reali, non solo teorici.",
+    "stayActive": "StayActive",
+    "stayActiveList": [
+      "CEO alla guida di iniziative di innovazione",
+      "Unire tecnologia e soluzioni pratiche",
+      "Creare impatto concreto attraverso l'azione",
+      "Costruire sistemi che durano oltre l'entusiasmo iniziale"
+    ],
+    "howIBuild": "Come costruisco",
+    "howIBuildList": [
+      "Identificare opportunità che altri non vedono",
+      "Creare soluzioni sostenibili, non rattoppi temporanei",
+      "Costruire team forti con valori condivisi",
+      "Guidare il cambiamento che conta, non il cambiamento fine a sé stesso"
+    ],
+    "signature": "Decisioni basate sui dati.<br>Metodologia agile.<br>Approccio centrato sul cliente.<br>Innovazione continua senza rumore.",
+    "teamPhilosophy": "Filosofia di team",
+    "teamPhilosophyList": [
+      "Visione e valori condivisi come fondamenta",
+      "Responsabilizzazione e fiducia invece del micromanagement",
+      "Apprendimento continuo come modo di lavorare",
+      "Comunicazione aperta senza barriere gerarchiche"
+    ]
+  },
+  "software": {
+    "heroOpening": "Il codice è un mezzo, non un fine.",
+    "heroSupporting": "Scrivo software per risolvere problemi reali—automatizzando ciò che è tedioso, connettendo ciò che è frammentato, costruendo ciò che ancora non esiste.",
+    "philosophy": "Filosofia",
+    "philosophyList": [
+      "Focus su automazione ed efficienza",
+      "Soluzioni pratiche con tecnologie innovative",
+      "Risolvere problemi del mondo reale, non esercizi teorici",
+      "Costruire per durare, non per impressionare"
+    ],
+    "techStack": "Stack tecnologico",
+    "techStackList": [
+      "Python per automazione e machine learning",
+      "Swift per sviluppo iOS",
+      "Bash per scripting di sistema",
+      "Framework AI e ML per soluzioni intelligenti"
+    ],
+    "signature": "Automazione dei processi.<br>Integrazione AI.<br>Ottimizzazione dei workflow.<br>Sistemi che lavorano mentre dormi.",
+    "whatIBuild": "Cosa costruisco",
+    "whatIBuildList": [
+      "Soluzioni di automazione personalizzate per workflow complessi",
+      "Applicazioni potenziate dall'AI che imparano e si adattano",
+      "Strumenti di trasformazione digitale per industrie tradizionali",
+      "Sistemi di integrazione che connettono piattaforme disparate"
+    ]
+  },
+  "finance": {
+    "heroOpening": "Comprendere il denaro come sistema.",
+    "heroSupporting": "La finanza è dove il rischio incontra l'opportunità. Mi avvicino ai mercati con rigore analitico, strumenti tecnologici e una prospettiva di lungo termine che guarda oltre il rumore quotidiano.",
+    "financialMarkets": "Mercati finanziari",
+    "financialMarketsList": [
+      "Analisi tradizionale potenziata dalla tecnologia moderna",
+      "Esplorare nuove opportunità con valutazione attenta",
+      "Costruire strategie di crescita sostenibili",
+      "Comprendere il rischio prima di cercare il rendimento"
+    ],
+    "digitalAssets": "Asset digitali",
+    "digitalAssetsList": [
+      "Mercati delle criptovalute e tendenze emergenti",
+      "Tecnologia NFT e applicazioni pratiche",
+      "Innovazioni blockchain oltre l'hype",
+      "Opportunità DeFi con approccio misurato"
+    ],
+    "signature": "Analisi guidata dall'AI.<br>Approcci sistematici.<br>Decisioni consapevoli del rischio.<br>Pensiero di lungo termine in mercati di breve termine.",
+    "riskManagement": "Gestione del rischio",
+    "riskManagementList": [
+      "Diversificazione del portafoglio come fondamento",
+      "Valutazione del rischio prima della valutazione delle opportunità",
+      "Analisi di mercato che riconosce l'incertezza",
+      "Pianificazione di lungo termine con flessibilità incorporata"
+    ]
+  },
+  "church": {
+    "heroOpening": "La fede come fondamento, non come formalità.",
+    "heroSupporting": "La Chiesa è dove trovo uno scopo oltre il lavoro. Mi impegno a portare i valori tradizionali nei contesti contemporanei—rendendo la fede accessibile senza diluire ciò che conta.",
+    "myRole": "Il mio ruolo",
+    "myRoleList": [
+      "Partecipazione attiva ogni domenica",
+      "Fare la differenza nella comunità",
+      "Unire valori tradizionali e approcci moderni",
+      "Costruire connessioni che vanno oltre la domenica"
+    ],
+    "youthEducation": "Educazione dei giovani",
+    "youthEducationList": [
+      "Lavorare con giovani che mi ispirano",
+      "Aiutare a navigare percorsi spirituali con onestà",
+      "Rendere gli insegnamenti rilevanti per la vita contemporanea",
+      "Creare spazio per le domande, non solo per le risposte"
+    ],
+    "signature": "Innovazione pastorale digitale.<br>Fede e tecnologia connesse.<br>Coinvolgimento della comunità online e offline.<br>Il cambiamento viene da dentro, non da fuori.",
+    "visionForChange": "Visione per il cambiamento",
+    "visionForChangeList": [
+      "Far evolvere la Chiesa dall'interno, con rispetto",
+      "Mantenere i valori fondamentali adattando i metodi",
+      "Comunicazione che parla al mondo di oggi",
+      "Costruire ponti tra le generazioni"
+    ]
+  },
+  "projects": {
+    "heroOpening": "Trasformare le idee in sistemi.",
+    "heroSupporting": "I progetti sono dove la visione incontra l'esecuzione. Mi concentro sul costruire cose che risolvono problemi reali—dalle piattaforme tecnologiche alle iniziative comunitarie.",
+    "currentFocus": "Focus attuale",
+    "currentFocusList": [
+      "Sviluppo piattaforma StayActive",
+      "Soluzioni di automazione guidate dall'AI",
+      "Innovazioni pastorali digitali",
+      "Integrazione di tecnologie assicurative"
+    ],
+    "innovationAreas": "Aree di innovazione",
+    "innovationAreasList": [
+      "Applicazioni AI e Machine Learning",
+      "Automazione dei processi per workflow complessi",
+      "Trasformazione digitale in industrie tradizionali",
+      "Piattaforme di coinvolgimento della comunità"
+    ],
+    "signature": "Tecnologia finanziaria.<br>Innovazione sanitaria.<br>Tecnologia educativa.<br>Costruire dove conta di più.",
+    "communityImpact": "Impatto sulla comunità",
+    "communityImpactList": [
+      "Programmi di mentorship per i giovani",
+      "Iniziative di alfabetizzazione digitale",
+      "Progetti di modernizzazione della Chiesa",
+      "Educazione tecnologica per tutte le età"
+    ]
+  }
+}

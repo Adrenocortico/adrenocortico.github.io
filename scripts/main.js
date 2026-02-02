@@ -64,9 +64,14 @@ async function loadComponent(elementId, componentPath) {
     }
 }
 
-function initializeComponents() {
-    loadComponent('header', 'components/header.html');
-    loadComponent('footer', 'components/footer.html');
+async function initializeComponents() {
+    await Promise.all([
+        loadComponent('header', 'components/header.html'),
+        loadComponent('footer', 'components/footer.html')
+    ]);
+
+    // Dispatch event when all components are loaded
+    document.dispatchEvent(new CustomEvent('componentsLoaded'));
 }
 
 function updateFooterYear() {
@@ -428,3 +433,216 @@ if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     document.documentElement.style.setProperty('--transition-normal', '0.01s');
     document.documentElement.style.setProperty('--transition-slow', '0.01s');
 }
+
+// ===============================================
+// INTERNATIONALIZATION (i18n)
+// ===============================================
+
+const I18N = {
+    currentLang: 'en',
+    translations: {},
+    supportedLangs: ['en', 'it'],
+
+    // Detect user's preferred language
+    detectLanguage() {
+        // 1. Check localStorage for saved preference
+        const saved = localStorage.getItem('preferred-language');
+        if (saved && this.supportedLangs.includes(saved)) {
+            return saved;
+        }
+
+        // 2. Check browser language
+        const browserLang = navigator.language || navigator.userLanguage;
+        const langCode = browserLang.split('-')[0].toLowerCase();
+
+        // If Italian, return Italian
+        if (langCode === 'it') {
+            return 'it';
+        }
+
+        // Default to English for everyone else
+        return 'en';
+    },
+
+    // Load translation file
+    async loadTranslations(lang) {
+        try {
+            const response = await fetch(`locales/${lang}.json`);
+            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+            this.translations = await response.json();
+            this.currentLang = lang;
+            return true;
+        } catch (error) {
+            console.error(`Error loading translations for ${lang}:`, error);
+            // Fallback to English if loading fails
+            if (lang !== 'en') {
+                return this.loadTranslations('en');
+            }
+            return false;
+        }
+    },
+
+    // Get translation by key path (e.g., "nav.home")
+    t(keyPath) {
+        const keys = keyPath.split('.');
+        let value = this.translations;
+
+        for (const key of keys) {
+            if (value && typeof value === 'object' && key in value) {
+                value = value[key];
+            } else {
+                console.warn(`Translation not found: ${keyPath}`);
+                return keyPath;
+            }
+        }
+
+        return value;
+    },
+
+    // Get current page name from URL
+    getCurrentPage() {
+        const path = window.location.pathname;
+        const page = path.split('/').pop().replace('.html', '') || 'index';
+        return page === '' ? 'index' : page;
+    },
+
+    // Apply translations to the page
+    applyTranslations() {
+        const page = this.getCurrentPage();
+
+        // Update HTML lang attribute
+        document.documentElement.lang = this.currentLang;
+
+        // Update meta description
+        const metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc && this.translations.meta?.description?.[page]) {
+            metaDesc.content = this.translations.meta.description[page];
+        }
+
+        // Update page title
+        if (this.translations.meta?.title?.[page]) {
+            document.title = this.translations.meta.title[page];
+        }
+
+        // Apply translations to elements with data-i18n attribute
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            const translation = this.t(key);
+
+            if (typeof translation === 'string') {
+                // Check if element should use innerHTML (for <br> tags etc.)
+                if (el.hasAttribute('data-i18n-html')) {
+                    el.innerHTML = translation;
+                } else {
+                    el.textContent = translation;
+                }
+            }
+        });
+
+        // Apply translations to lists
+        document.querySelectorAll('[data-i18n-list]').forEach(ul => {
+            const key = ul.getAttribute('data-i18n-list');
+            const items = this.t(key);
+
+            if (Array.isArray(items)) {
+                const listItems = ul.querySelectorAll('li');
+                items.forEach((text, index) => {
+                    if (listItems[index]) {
+                        listItems[index].textContent = text;
+                    }
+                });
+            }
+        });
+
+        // Update navigation links text
+        this.updateNavigation();
+
+        // Update language switcher active state
+        this.updateLanguageSwitcher();
+    },
+
+    // Update navigation text
+    updateNavigation() {
+        const navMappings = {
+            'index.html': 'nav.home',
+            'insurance.html': 'nav.insurance',
+            'entrepreneurship.html': 'nav.entrepreneurship',
+            'software.html': 'nav.software',
+            'church.html': 'nav.church',
+            'finance.html': 'nav.finance',
+            'projects.html': 'nav.projects'
+        };
+
+        // Update main nav links
+        document.querySelectorAll('.nav-links a, .explore-nav a').forEach(link => {
+            const href = link.getAttribute('href');
+            if (navMappings[href]) {
+                link.textContent = this.t(navMappings[href]);
+            }
+        });
+
+        // Update explore label
+        document.querySelectorAll('.explore-label').forEach(el => {
+            el.textContent = this.t('common.explore');
+        });
+    },
+
+    // Update language switcher UI
+    updateLanguageSwitcher() {
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            const lang = btn.getAttribute('data-lang');
+            if (lang === this.currentLang) {
+                btn.classList.add('active');
+            } else {
+                btn.classList.remove('active');
+            }
+        });
+    },
+
+    // Switch language
+    async switchLanguage(lang) {
+        if (!this.supportedLangs.includes(lang) || lang === this.currentLang) {
+            return;
+        }
+
+        // Save preference
+        localStorage.setItem('preferred-language', lang);
+
+        // Load new translations
+        await this.loadTranslations(lang);
+
+        // Apply to page
+        this.applyTranslations();
+    },
+
+    // Initialize i18n system
+    async init() {
+        const lang = this.detectLanguage();
+        await this.loadTranslations(lang);
+
+        // Apply translations after components are loaded
+        // We use a small delay to ensure header/footer are loaded
+        setTimeout(() => {
+            this.applyTranslations();
+        }, 100);
+
+        // Also apply when components are done loading
+        document.addEventListener('componentsLoaded', () => {
+            this.applyTranslations();
+        });
+
+        // Set up language switcher event delegation
+        document.addEventListener('click', (e) => {
+            const langBtn = e.target.closest('.lang-btn');
+            if (langBtn) {
+                const lang = langBtn.getAttribute('data-lang');
+                this.switchLanguage(lang);
+            }
+        });
+    }
+};
+
+// Initialize i18n on DOM ready
+document.addEventListener('DOMContentLoaded', () => {
+    I18N.init();
+});
