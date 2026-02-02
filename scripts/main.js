@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeMobileMenu();
     initializeScrollEffects();
     initializeCardAnimations();
+    initializeHomepageSections();
     initializeCursorGlow();
     initializeSmoothScroll();
     initializeParallax();
@@ -208,6 +209,43 @@ function initializeCardAnimations() {
 }
 
 // ===============================================
+// HOMEPAGE SECTIONS ANIMATION
+// ===============================================
+
+function initializeHomepageSections() {
+    // Only run on homepage
+    if (!document.body.classList.contains('homepage')) return;
+
+    const sections = document.querySelectorAll('.content-section, .signature-section, .human-section, .signal-section, .explore-section');
+
+    if (sections.length === 0) return;
+
+    // Add initial hidden state
+    sections.forEach((section, index) => {
+        section.style.opacity = '0';
+        section.style.transform = 'translateY(30px)';
+        section.style.transition = `opacity 0.8s ease ${index * 0.15}s, transform 0.8s ease ${index * 0.15}s`;
+    });
+
+    // Create intersection observer for sections
+    const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+                sectionObserver.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -30px 0px'
+    });
+
+    // Observe all sections
+    sections.forEach(section => sectionObserver.observe(section));
+}
+
+// ===============================================
 // CURSOR GLOW EFFECT
 // ===============================================
 
@@ -288,7 +326,23 @@ function initializeParallax() {
     const hero = document.querySelector('.hero');
     if (!hero) return;
 
-    // Parallax on scroll for hero section
+    // Skip aggressive parallax on homepage (refined hero)
+    if (hero.classList.contains('hero-refined')) {
+        // Use subtle, slower parallax for refined homepage
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const heroContent = hero.querySelector('.container');
+
+            if (heroContent && scrolled < window.innerHeight) {
+                // Much gentler effect - only slight fade
+                const opacity = 1 - (scrolled / (window.innerHeight * 1.5));
+                heroContent.style.opacity = Math.max(0.3, opacity);
+            }
+        }, { passive: true });
+        return;
+    }
+
+    // Standard parallax for other pages
     window.addEventListener('scroll', () => {
         const scrolled = window.pageYOffset;
         const heroContent = hero.querySelector('.container');
