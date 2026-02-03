@@ -3,6 +3,7 @@
     "lang": "en",
     "description": {
       "index": "Francesco Dulio - Building complex systems in ambiguous contexts. Working at the intersection of vision, decisions, and delivery.",
+      "family": "Family - Francesco Dulio. What matters most.",
       "insurance": "Insurance Innovation - Francesco Dulio. Technology and Trust in Insurance.",
       "entrepreneurship": "Entrepreneurial Journey - Francesco Dulio. Innovation, Leadership, and Vision.",
       "software": "Software Development - Francesco Dulio. Code, Innovation, and Problem Solving.",
@@ -12,6 +13,7 @@
     },
     "title": {
       "index": "Francesco Dulio",
+      "family": "Family - Francesco",
       "insurance": "Insurance Innovation - Francesco",
       "entrepreneurship": "Entrepreneurship Journey - Francesco",
       "software": "Software Development - Francesco",
@@ -64,6 +66,18 @@
     "elsewhere": "Elsewhere",
     "elsewhereText": "Mountains. Piano. Photography.",
     "signal": "Forbes Top 100 Under 30 Italy"
+  },
+  "family": {
+    "heroOpening": "What matters most.",
+    "heroSupporting": "Married to Sara. Father of Chiara and Rachele.",
+    "foundation": "Foundation",
+    "foundationList": [
+      "Family comes first",
+      "Building a life together with intention",
+      "Present, not distracted",
+      "Values lived, not just stated"
+    ],
+    "signature": "Mountains.<br>Piano.<br>Photography.<br>Time well spent."
   },
   "palioPage": {
     "heroOpening": "Leading without formal authority.",

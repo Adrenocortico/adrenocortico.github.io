@@ -86,13 +86,21 @@ function updateFooterYear() {
 // ===============================================
 
 function initializeNavigation() {
-    const currentLocation = window.location.pathname;
-    const currentPage = currentLocation.split('/').pop() || 'index.html';
+    const normalizePage = (value) => {
+        if (!value) return 'index';
+        const trimmed = value.replace(/\/+$/, '').replace(/^\/+/, '');
+        const base = trimmed.split('/').pop() || '';
+        const withoutExt = base.replace(/\.html$/, '');
+        return withoutExt || 'index';
+    };
+    const currentPage = normalizePage(window.location.pathname);
     const navLinks = document.querySelectorAll('.nav-links a');
 
     navLinks.forEach(link => {
         const href = link.getAttribute('href');
-        if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+        if (!href) return;
+        const normalizedHref = normalizePage(href);
+        if (normalizedHref === currentPage) {
             link.classList.add('active');
         }
     });
@@ -510,8 +518,10 @@ const I18N = {
     // Get current page name from URL
     getCurrentPage() {
         const path = window.location.pathname;
-        const page = path.split('/').pop().replace('.html', '') || 'index';
-        return page === '' ? 'index' : page;
+        const trimmed = path.replace(/\/+$/, '').replace(/^\/+/, '');
+        const page = trimmed.split('/').pop() || '';
+        const withoutExt = page.replace(/\.html$/, '');
+        return withoutExt || 'index';
     },
 
     // Apply translations to the page
@@ -572,20 +582,22 @@ const I18N = {
     // Update navigation text
     updateNavigation() {
         const navMappings = {
-            'index.html': 'nav.home',
-            'insurance.html': 'nav.insurance',
-            'entrepreneurship.html': 'nav.entrepreneurship',
-            'software.html': 'nav.software',
-            'church.html': 'nav.church',
-            'finance.html': 'nav.finance',
-            'projects.html': 'nav.projects'
+            'index': 'nav.home',
+            'insurance': 'nav.insurance',
+            'entrepreneurship': 'nav.entrepreneurship',
+            'software': 'nav.software',
+            'church': 'nav.church',
+            'finance': 'nav.finance',
+            'projects': 'nav.projects'
         };
 
         // Update main nav links
         document.querySelectorAll('.nav-links a, .explore-nav a').forEach(link => {
             const href = link.getAttribute('href');
-            if (navMappings[href]) {
-                link.textContent = this.t(navMappings[href]);
+            if (!href) return;
+            const normalizedHref = href.replace(/\/+$/, '').replace(/\.html$/, '');
+            if (navMappings[normalizedHref]) {
+                link.textContent = this.t(navMappings[normalizedHref]);
             }
         });
 

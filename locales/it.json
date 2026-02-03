@@ -3,6 +3,7 @@
     "lang": "it",
     "description": {
       "index": "Francesco Dulio - Costruisco sistemi complessi in contesti ambigui. Lavoro all'intersezione tra visione, decisioni e realizzazione.",
+      "family": "Famiglia - Francesco Dulio. Ciò che conta davvero.",
       "insurance": "Innovazione Assicurativa - Francesco Dulio. Tecnologia e Fiducia nel mondo delle Assicurazioni.",
       "entrepreneurship": "Percorso Imprenditoriale - Francesco Dulio. Innovazione, Leadership e Visione.",
       "software": "Sviluppo Software - Francesco Dulio. Codice, Innovazione e Problem Solving.",
@@ -12,6 +13,7 @@
     },
     "title": {
       "index": "Francesco Dulio",
+      "family": "Famiglia - Francesco",
       "insurance": "Innovazione Assicurativa - Francesco",
       "entrepreneurship": "Percorso Imprenditoriale - Francesco",
       "software": "Sviluppo Software - Francesco",
@@ -64,6 +66,18 @@
     "elsewhere": "Altrove",
     "elsewhereText": "Montagna. Pianoforte. Fotografia.",
     "signal": "Forbes Top 100 Under 30 Italia"
+  },
+  "family": {
+    "heroOpening": "Ciò che conta davvero.",
+    "heroSupporting": "Sposato con Sara. Padre di Chiara e Rachele.",
+    "foundation": "Fondamento",
+    "foundationList": [
+      "La famiglia viene prima",
+      "Costruire una vita insieme con intenzione",
+      "Presente, non distratto",
+      "Valori vissuti, non solo dichiarati"
+    ],
+    "signature": "Montagna.<br>Pianoforte.<br>Fotografia.<br>Tempo ben speso."
   },
   "palioPage": {
     "heroOpening": "Leadership senza autorità formale.",
