@@ -1446,6 +1446,65 @@ body.subpage .hero.hero-refined {
     background: rgba(129, 140, 248, 0.12);
 }
 
+.github-repo-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--space-sm);
+    margin-top: var(--space-md);
+}
+
+.github-repo-card {
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.03);
+    padding: var(--space-sm);
+    transition: var(--transition-fast);
+}
+
+.github-repo-card:hover {
+    border-color: rgba(129, 140, 248, 0.4);
+    background: rgba(129, 140, 248, 0.08);
+}
+
+.github-repo-title {
+    display: inline-flex;
+    font-weight: 600;
+    color: var(--text-primary);
+    text-decoration: none;
+    margin-bottom: 0.35rem;
+}
+
+.github-repo-card:hover .github-repo-title {
+    color: var(--primary-light);
+}
+
+.github-repo-description {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin: 0 0 var(--space-xs);
+    line-height: 1.5;
+}
+
+.github-repo-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.github-repo-chip {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-full);
+    padding: 0.2rem 0.55rem;
+}
+
+.github-fallback {
+    margin-top: var(--space-sm);
+}
+
 /* Projects Page Responsive */
 @media (max-width: 768px) {
     .project-example {

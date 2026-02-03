@@ -321,6 +321,18 @@
       "La responsabilità non si può delegare",
       "I sistemi devono funzionare con persone reali, non ideali"
     ],
-    "connectClosing": "È lì che tendo a operare al meglio."
+    "connectClosing": "È lì che tendo a operare al meglio.",
+    "githubTitle": "Progetti GitHub",
+    "githubIntro": "Repository pubblici aggiornati direttamente dal mio profilo GitHub.",
+    "githubAutoLabel": "Aggiornamento automatico",
+    "githubProfile": "Apri profilo GitHub",
+    "githubLoading": "Caricamento repository...",
+    "githubError": "Impossibile caricare i repository al momento.",
+    "githubEmpty": "Nessun repository pubblico disponibile.",
+    "githubNoDescription": "Nessuna descrizione disponibile.",
+    "githubLanguage": "Linguaggio",
+    "githubStars": "Stelle",
+    "githubUpdated": "Aggiornato",
+    "githubUnknown": "Sconosciuto"
   }
 }

@@ -379,6 +379,103 @@ function initializeParallax() {
 }
 
 // ===============================================
+// GITHUB PROJECTS
+// ===============================================
+
+async function initializeGitHubProjects() {
+    const list = document.getElementById('github-repo-list');
+    const fallback = document.getElementById('github-fallback');
+
+    if (!list || !fallback) return;
+
+    const profile = 'Adrenocortico';
+    const apiUrl = `https://api.github.com/users/${profile}/repos?per_page=100&sort=updated`;
+
+    const setFallback = (key) => {
+        fallback.setAttribute('data-i18n', key);
+        if (I18N?.t) {
+            fallback.textContent = I18N.t(key);
+        }
+    };
+
+    try {
+        const response = await fetch(apiUrl, {
+            headers: {
+                Accept: 'application/vnd.github+json'
+            }
+        });
+
+        if (!response.ok) {
+            throw new Error(`GitHub API error: ${response.status}`);
+        }
+
+        const repos = await response.json();
+
+        if (!Array.isArray(repos) || repos.length === 0) {
+            setFallback('projects.githubEmpty');
+            return;
+        }
+
+        const formatter = new Intl.DateTimeFormat(undefined, {
+            year: 'numeric',
+            month: 'short',
+            day: '2-digit'
+        });
+
+        list.innerHTML = '';
+
+        repos.forEach(repo => {
+            if (!repo || !repo.html_url) return;
+
+            const card = document.createElement('article');
+            card.className = 'github-repo-card';
+
+            const title = document.createElement('a');
+            title.href = repo.html_url;
+            title.target = '_blank';
+            title.rel = 'noopener';
+            title.textContent = repo.name;
+            title.className = 'github-repo-title';
+
+            const description = document.createElement('p');
+            description.className = 'github-repo-description';
+            description.textContent = repo.description || I18N.t('projects.githubNoDescription');
+
+            const meta = document.createElement('div');
+            meta.className = 'github-repo-meta';
+
+            if (repo.language) {
+                const language = document.createElement('span');
+                language.className = 'github-repo-chip';
+                language.textContent = `${I18N.t('projects.githubLanguage')}: ${repo.language}`;
+                meta.appendChild(language);
+            }
+
+            const stars = document.createElement('span');
+            stars.className = 'github-repo-chip';
+            stars.textContent = `${I18N.t('projects.githubStars')}: ${repo.stargazers_count ?? 0}`;
+            meta.appendChild(stars);
+
+            const updated = document.createElement('span');
+            updated.className = 'github-repo-chip';
+            const updatedDate = repo.pushed_at ? formatter.format(new Date(repo.pushed_at)) : I18N.t('projects.githubUnknown');
+            updated.textContent = `${I18N.t('projects.githubUpdated')}: ${updatedDate}`;
+            meta.appendChild(updated);
+
+            card.appendChild(title);
+            card.appendChild(description);
+            card.appendChild(meta);
+            list.appendChild(card);
+        });
+
+        fallback.remove();
+    } catch (error) {
+        console.error('Failed to load GitHub repos:', error);
+        setFallback('projects.githubError');
+    }
+}
+
+// ===============================================
 // UTILITY FUNCTIONS
 // ===============================================
 
@@ -649,6 +746,7 @@ const I18N = {
         // Also apply when components are done loading
         document.addEventListener('componentsLoaded', () => {
             this.applyTranslations();
+            initializeGitHubProjects();
         });
 
         // Set up language switcher event delegation

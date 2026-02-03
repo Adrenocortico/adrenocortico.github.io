@@ -321,6 +321,18 @@
       "Responsibility cannot be delegated away",
       "Systems must work with real people, not ideal ones"
     ],
-    "connectClosing": "That’s where I tend to operate best."
+    "connectClosing": "That’s where I tend to operate best.",
+    "githubTitle": "GitHub projects",
+    "githubIntro": "Public repositories updated directly from my GitHub profile.",
+    "githubAutoLabel": "Auto-updated",
+    "githubProfile": "Open GitHub profile",
+    "githubLoading": "Loading repositories...",
+    "githubError": "Unable to load repositories right now.",
+    "githubEmpty": "No public repositories available yet.",
+    "githubNoDescription": "No description provided.",
+    "githubLanguage": "Language",
+    "githubStars": "Stars",
+    "githubUpdated": "Updated",
+    "githubUnknown": "Unknown"
   }
 }
