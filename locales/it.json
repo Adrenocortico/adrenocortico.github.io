@@ -65,6 +65,25 @@
     "elsewhereText": "Montagna. Pianoforte. Fotografia.",
     "signal": "Forbes Top 100 Under 30 Italia"
   },
+  "palioPage": {
+    "heroOpening": "Leadership senza autorità formale.",
+    "heroSupporting": "Un grande evento storico su larga scala che opera in un contesto non gerarchico, dove visione ed esecuzione devono coesistere.",
+    "theSystem": "Il sistema",
+    "theSystemList": [
+      "Istituzioni pubbliche",
+      "Sponsor e fondazioni",
+      "Decine di volontari e collaboratori",
+      "Migliaia di partecipanti e visitatori"
+    ],
+    "myRole": "Il mio ruolo",
+    "myRoleList": [
+      "Tenere insieme visione ed esecuzione",
+      "Assumere responsabilità dove manca una struttura formale",
+      "Abilitare il coordinamento tra attori molto diversi",
+      "Garantire continuità e affidabilità anno dopo anno"
+    ],
+    "signature": "Rischio logistico reale.<br>Complessità organizzativa reale.<br>Esposizione pubblica reale.<br>Leadership senza autorità formale."
+  },
   "insurance": {
     "heroOpening": "Portare chiarezza nella protezione.",
     "heroSupporting": "L'assicurazione è fiducia tradotta in sistemi. Lavoro per unire i valori tradizionali agli strumenti moderni—rendendo la protezione più accessibile senza perdere ciò che conta.",

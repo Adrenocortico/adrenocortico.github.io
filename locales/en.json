@@ -65,6 +65,25 @@
     "elsewhereText": "Mountains. Piano. Photography.",
     "signal": "Forbes Top 100 Under 30 Italy"
   },
+  "palioPage": {
+    "heroOpening": "Leading without formal authority.",
+    "heroSupporting": "A large-scale historical event operating in a non-hierarchical environment where vision and delivery must coexist.",
+    "theSystem": "The system",
+    "theSystemList": [
+      "Public institutions",
+      "Sponsors and foundations",
+      "Dozens of volunteers and contributors",
+      "Thousands of participants and visitors"
+    ],
+    "myRole": "My role",
+    "myRoleList": [
+      "Hold vision and delivery together",
+      "Take responsibility where formal structure is missing",
+      "Enable coordination across very different actors",
+      "Ensure continuity and reliability year after year"
+    ],
+    "signature": "Real logistical risk.<br>Real organizational complexity.<br>Real public exposure.<br>Leadership without formal authority."
+  },
   "insurance": {
     "heroOpening": "Bringing clarity to protection.",
     "heroSupporting": "Insurance is trust translated into systems. I work on bridging traditional values with modern tools—making protection more accessible without losing what matters.",
