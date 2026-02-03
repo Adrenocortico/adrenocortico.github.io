@@ -850,6 +850,10 @@ body.homepage::before {
     opacity: 0.8;
 }
 
+body.homepage .nav-home {
+    display: none;
+}
+
 /* Refined Hero Section */
 .hero.hero-refined {
     min-height: 85vh;
