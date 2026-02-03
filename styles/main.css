@@ -272,6 +272,60 @@ nav {
     padding: calc(80px + var(--space-2xl)) var(--space-md) var(--space-2xl);
     position: relative;
     overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(10, 10, 15, 0.4) 0%, rgba(10, 10, 15, 0) 50%, rgba(10, 10, 15, 0.8) 100%);
+    z-index: 1;
+}
+
+/* Page Specific Heroes */
+.hero-home { background-image: url('../assets/images/hero-home.png'); }
+.hero-software { background-image: url('../assets/images/hero-software.png'); }
+.hero-finance { background-image: url('../assets/images/hero-finance.png'); }
+.hero-entrepreneurship { background-image: url('../assets/images/hero-entrepreneurship.png'); }
+
+/* Dynamic Variants for pages with missing assets */
+.hero-insurance { 
+    background-image: url('../assets/images/hero-home.png'); 
+    filter: hue-rotate(200deg) brightness(0.8); 
+}
+.hero-palio { 
+    background-image: url('../assets/images/hero-home.png'); 
+    filter: hue-rotate(320deg) saturate(1.2); 
+}
+.hero-church { 
+    background-image: url('../assets/images/hero-home.png'); 
+    filter: hue-rotate(45deg) brightness(1.1); 
+}
+.hero-family { 
+    background-image: url('../assets/images/hero-home.png'); 
+    filter: hue-rotate(180deg) brightness(0.9); 
+}
+.hero-projects { 
+    background-image: url('../assets/images/hero-software.png'); 
+    filter: hue-rotate(90deg) opacity(0.7); 
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    background: rgba(10, 10, 15, 0.3);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: var(--space-xl);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--glass-border);
+    max-width: 900px;
 }
 
 /* Animated Gradient Orbs */
@@ -1018,14 +1072,35 @@ body.homepage .nav-home {
 
 .human-item {
     text-align: center;
+    background: var(--bg-card);
+    padding: var(--space-lg);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--glass-border);
+    transition: var(--transition-normal);
+}
+
+.human-item:hover {
+    background: var(--bg-card-hover);
+    transform: translateY(-5px);
+    border-color: var(--primary-light);
+}
+
+.human-icon {
+    font-size: 2rem;
+    margin-bottom: var(--space-sm);
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
 }
 
 .human-label {
     display: block;
     font-size: 0.75rem;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.15em;
     color: var(--text-muted);
     margin-bottom: var(--space-xs);
 }
