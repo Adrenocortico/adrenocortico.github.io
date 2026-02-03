@@ -1300,10 +1300,16 @@ body.subpage .hero.hero-refined {
 }
 
 .project-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.2;
     color: var(--text-secondary);
     text-decoration: none;
-    padding: 0.2rem 0.7rem;
+    padding: 0.3rem 0.75rem;
+    min-height: 32px;
     border-radius: var(--radius-full);
     border: 1px solid rgba(255, 255, 255, 0.12);
     background: rgba(255, 255, 255, 0.03);
