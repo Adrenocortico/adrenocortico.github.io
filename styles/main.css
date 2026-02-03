@@ -1235,3 +1235,62 @@ body.subpage .hero.hero-refined {
         padding: 10px 20px;
     }
 }
+
+/* ===============================================
+   PROJECTS PAGE STYLES
+   =============================================== */
+
+/* Project Example - Consistent with homepage sections */
+.project-example {
+    margin-bottom: var(--space-xl);
+    padding-bottom: var(--space-lg);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.project-example:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.project-example h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(1.3rem, 2.5vw, 1.6rem);
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--space-sm);
+    letter-spacing: -0.01em;
+    transition: var(--transition-fast);
+}
+
+.project-example:hover h3 {
+    color: var(--primary-light);
+}
+
+/* Section Description - Matches context and declarative lists */
+.section-description {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin: 0;
+    transition: var(--transition-fast);
+}
+
+.project-example:hover .section-description {
+    color: var(--text-primary);
+}
+
+/* Projects Page Responsive */
+@media (max-width: 768px) {
+    .project-example {
+        margin-bottom: var(--space-lg);
+        padding-bottom: var(--space-md);
+    }
+
+    .project-example h3 {
+        font-size: 1.2rem;
+    }
+
+    .section-description {
+        font-size: 1rem;
+    }
+}
