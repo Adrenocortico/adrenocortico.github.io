@@ -1283,6 +1283,39 @@ body.subpage .hero.hero-refined {
     color: var(--text-primary);
 }
 
+.project-links-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-muted);
+    margin-top: var(--space-sm);
+    margin-bottom: var(--space-xs);
+}
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs) var(--space-sm);
+}
+
+.project-links a {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    padding: 0.2rem 0.7rem;
+    border-radius: var(--radius-full);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.03);
+    transition: var(--transition-fast);
+}
+
+.project-links a:hover {
+    color: var(--text-primary);
+    border-color: rgba(129, 140, 248, 0.6);
+    background: rgba(129, 140, 248, 0.12);
+}
+
 /* Projects Page Responsive */
 @media (max-width: 768px) {
     .project-example {

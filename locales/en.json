@@ -36,7 +36,18 @@
     "copyright": "Francesco Dulio. Crafted with passion."
   },
   "common": {
-    "explore": "Explore"
+    "explore": "Explore",
+    "links": "Links"
+  },
+  "links": {
+    "palioSite": "Palio di Vigevano",
+    "fantaPalio": "FantaPalio",
+    "doganaPalio": "Dogana del Palio",
+    "isicoAppStore": "ISICOApp on the App Store",
+    "assistudio": "Assistudio",
+    "pensioni": "Pension calculator",
+    "agencyChat": "Agency quotes & management",
+    "catnat": "CatNat"
   },
   "index": {
     "heroOpening": "Building complex systems in ambiguous contexts.",

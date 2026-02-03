@@ -36,7 +36,18 @@
     "copyright": "Francesco Dulio. Realizzato con dedizione."
   },
   "common": {
-    "explore": "Esplora"
+    "explore": "Esplora",
+    "links": "Link"
+  },
+  "links": {
+    "palioSite": "Palio di Vigevano",
+    "fantaPalio": "FantaPalio",
+    "doganaPalio": "Dogana del Palio",
+    "isicoAppStore": "ISICOApp su App Store",
+    "assistudio": "Assistudio",
+    "pensioni": "Calcolo pensioni",
+    "agencyChat": "Preventivazione e gestione agenzia",
+    "catnat": "CatNat"
   },
   "index": {
     "heroOpening": "Costruisco sistemi complessi dove altri vedono solo caos.",
