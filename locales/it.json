@@ -69,9 +69,9 @@
     ],
     "signature": "Mentalità da fisico.<br>Disciplina da pianista.<br>Sempre a chiedermi perché.<br>Costruisco per passione, non per apparire.",
     "family": "Famiglia",
-    "familyText": "Sposato con Sara, psicologa. Padre di Chiara e Rachele. Il centro di tutto.",
+    "familyText": "Sposato con Sara, fisioterapista. Padre di Chiara e Rachele. Il centro di tutto.",
     "palio": "Palio",
-    "palioText": "Presidente del Palio di Vigevano dal 2018. 50+ volontari, 4 giorni di eventi, una corsa storica.",
+    "palioText": "Presidente del Palio di Vigevano dal 2022. 50+ volontari, 4 giorni di eventi, una corsa storica.",
     "faith": "Fede",
     "faithText": "Catechista per adolescenti nella mia parrocchia. La Messa domenicale, sempre.",
     "elsewhere": "Altrove",
@@ -80,10 +80,10 @@
   },
   "family": {
     "heroOpening": "Ciò che conta davvero.",
-    "heroSupporting": "Sposato con Sara, psicologa. Padre di Chiara e Rachele.",
+    "heroSupporting": "Sposato con Sara, fisioterapista. Padre di Chiara e Rachele.",
     "aboutUs": "Chi siamo",
     "aboutUsList": [
-      "Sara è psicologa clinica. Ci siamo conosciuti all'università. Insieme dal 2010, sposati dal 2016.",
+      "Sara è fisioterapista. Ci siamo conosciuti all'università. Insieme dal 2011, sposati dal 2017.",
       "Chiara e Rachele sono le nostre figlie. Crescerle è il progetto più importante.",
       "Viviamo a Vigevano, la città del Palio e dove è radicata la nostra comunità.",
       "Fede, educazione e presenza sono i valori che cerchiamo di vivere—non solo di predicare."
@@ -109,7 +109,7 @@
     ],
     "myRole": "Cosa faccio concretamente",
     "myRoleList": [
-      "Presidente dal 2018. Sono responsabile che l'evento accada—punto.",
+      "Presidente dal 2022. Sono responsabile che l'evento accada—punto.",
       "Coordino riunioni settimanali da marzo a ottobre",
       "Gestisco relazioni con le istituzioni, negozio con gli sponsor, risolvo conflitti",
       "Quando qualcosa va storto durante l'evento, sono io che decido—sul momento"
@@ -225,7 +225,7 @@
     "heroSupporting": "La Chiesa è dove trovo uno scopo oltre il lavoro. Mi impegno a portare i valori tradizionali nei contesti contemporanei—rendendo la fede accessibile senza diluire ciò che conta.",
     "myRole": "Il mio ruolo",
     "myRoleList": [
-      "Catechista per adolescenti (14-18 anni) nella mia parrocchia dal 2015",
+      "Catechista per giovani (12-24 anni) nella mia parrocchia dal 2015",
       "Incontri settimanali con un gruppo di circa 15 ragazzi",
       "Parte del consiglio pastorale per la pastorale giovanile",
       "La Messa domenicale è non negoziabile—è dove inizia la settimana"
