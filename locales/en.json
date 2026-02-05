@@ -59,7 +59,15 @@
       "Decisions with real consequences, not theoretical exercises",
       "Systems that need structure, not noise"
     ],
-    "whatIWorkOnExample": "A concrete example of this is the Palio of Vigevano—an organizational ecology of institutions, associations, sponsors, volunteers, logistics, and real risk—where I lead vision and delivery under ambiguity.",
+    "activitiesTitle": "Activities",
+    "activityAssistudioTitle": "Assistudio",
+    "activityAssistudioText": "Multi-agency insurance firm active since 1986, offering policies, financial advisory, and long-term rental.",
+    "activityIsicoTitle": "ISICO",
+    "activityIsicoText": "Italian Scientific Institute for the Spine: non-surgical spine rehabilitation, research, and training.",
+    "activityScegliNoiTitle": "Scegli Noi",
+    "activityScegliNoiText": "Network of multi-agency insurance firms founded in 2021: professional collaboration and advisory across insurance, finance, and long-term rental.",
+    "activityStayActiveTitle": "StayActive",
+    "activityStayActiveText": "Wearable device with an app that alerts incorrect posture via vibration. Project closed.",
     "howIWork": "How I work",
     "howIWorkList": [
       "I take ownership of outcomes, not just tasks",
