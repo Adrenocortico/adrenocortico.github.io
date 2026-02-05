@@ -26,3 +26,13 @@ This is the repository for my personal website, hosted on GitHub Pages. The site
 ## How to View the Site
 
 The site is accessible at: https://adrenocortico.github.io
+
+## Modalità di test (locale)
+
+Per testare il sito in locale con un server statico:
+
+```bash
+python3 -m http.server 8000
+```
+
+Apri poi: `http://localhost:8000`
