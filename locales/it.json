@@ -59,7 +59,15 @@
       "Decisioni con conseguenze reali, non esercizi accademici",
       "Sistemi che hanno bisogno di ordine, non di rumore"
     ],
-    "whatIWorkOnExample": "Un esempio concreto è il Palio di Vigevano: un'ecologia organizzativa di istituzioni, associazioni, sponsor, volontari, logistica e rischio reale, dove guido visione e delivery nell'ambiguità.",
+    "activitiesTitle": "Attività",
+    "activityAssistudioTitle": "Assistudio",
+    "activityAssistudioText": "Agenzia assicurativa plurimandataria attiva dal 1986, con polizze, consulenza finanziaria e noleggio a lungo termine.",
+    "activityIsicoTitle": "ISICO",
+    "activityIsicoText": "Istituto Scientifico Italiano Colonna Vertebrale: riabilitazione non chirurgica della colonna, ricerca e formazione.",
+    "activityScegliNoiTitle": "Scegli Noi",
+    "activityScegliNoiText": "Rete di agenzie assicurative plurimandatarie nata nel 2021: collaborazione tra professionisti, consulenza assicurativa, finanziaria e noleggio.",
+    "activityStayActiveTitle": "StayActive",
+    "activityStayActiveText": "Dispositivo indossabile con app che segnala la postura scorretta con una vibrazione. Progetto concluso.",
     "howIWork": "Come lavoro",
     "howIWorkList": [
       "Mi assumo la responsabilità dei risultati, non solo dei compiti",
@@ -69,24 +77,31 @@
     ],
     "signature": "Mentalità da fisico.<br>Disciplina da pianista.<br>Sempre a chiedermi perché.<br>Costruisco per passione, non per apparire.",
     "family": "Famiglia",
-    "familyText": "Sposato con Sara. Padre di Chiara e Rachele.",
+    "familyText": "Sposato con Sara, fisioterapista. Padre di Chiara e Rachele. Il centro di tutto.",
     "palio": "Palio",
-    "palioText": "Guido il Palio di Vigevano. Coordino istituzioni, volontari e visione.",
+    "palioText": "Presidente del Palio di Vigevano dal 2022. 50+ volontari, 4 giorni di eventi, una corsa storica.",
     "faith": "Fede",
-    "faithText": "In chiesa ogni domenica. Educatore per i giovani.",
+    "faithText": "Catechista per adolescenti nella mia parrocchia. La Messa domenicale, sempre.",
     "elsewhere": "Altrove",
-    "elsewhereText": "Montagna. Pianoforte. Fotografia.",
+    "elsewhereText": "Alpi d'estate, pianoforte classico dall'infanzia, fotografia come osservazione.",
     "signal": "Forbes Top 100 Under 30 Italia"
   },
   "family": {
     "heroOpening": "Ciò che conta davvero.",
-    "heroSupporting": "Sposato con Sara. Padre di Chiara e Rachele.",
-    "foundation": "Fondamento",
+    "heroSupporting": "Sposato con Sara, fisioterapista. Padre di Chiara e Rachele.",
+    "aboutUs": "Chi siamo",
+    "aboutUsList": [
+      "Sara è fisioterapista. Ci siamo conosciuti all'università. Insieme dal 2011, sposati dal 2017.",
+      "Chiara e Rachele sono le nostre figlie. Crescerle è il progetto più importante.",
+      "Viviamo a Vigevano, la città del Palio e dove è radicata la nostra comunità.",
+      "Fede, educazione e presenza sono i valori che cerchiamo di vivere—non solo di predicare."
+    ],
+    "foundation": "Come viviamo",
     "foundationList": [
-      "La famiglia viene prima",
-      "Costruire una vita insieme con intenzione",
-      "Presente, non distratto",
-      "Valori vissuti, non solo dichiarati"
+      "La domenica è per la famiglia e la Messa—senza eccezioni",
+      "Cena insieme, telefoni lontani",
+      "Vacanze in montagna: escursioni, silenzio, disconnessione",
+      "Decisioni prese insieme, anche quelle difficili"
     ],
     "signature": "Montagna.<br>Pianoforte.<br>Fotografia.<br>Tempo ben speso."
   },
@@ -95,17 +110,17 @@
     "heroSupporting": "Un grande evento storico su larga scala che opera in un contesto non gerarchico, dove visione ed esecuzione devono coesistere.",
     "theSystem": "Il sistema",
     "theSystemList": [
-      "Istituzioni pubbliche",
-      "Sponsor e fondazioni",
-      "Decine di volontari e collaboratori",
-      "Migliaia di partecipanti e visitatori"
+      "Comune, Provincia, fondazioni locali—ciascuno con le proprie tempistiche e priorità",
+      "10+ sponsor da coordinare, dalle attività locali ai partner istituzionali",
+      "50+ volontari tra logistica, comunicazione, accuratezza storica, sicurezza",
+      "4 giorni di eventi, una corsa storica a cavallo, 10.000+ visitatori nel weekend"
     ],
-    "myRole": "Il mio ruolo",
+    "myRole": "Cosa faccio concretamente",
     "myRoleList": [
-      "Tenere insieme visione ed esecuzione",
-      "Assumere responsabilità dove manca una struttura formale",
-      "Abilitare il coordinamento tra attori molto diversi",
-      "Garantire continuità e affidabilità anno dopo anno"
+      "Presidente dal 2022. Sono responsabile che l'evento accada—punto.",
+      "Coordino riunioni settimanali da marzo a ottobre",
+      "Gestisco relazioni con le istituzioni, negozio con gli sponsor, risolvo conflitti",
+      "Quando qualcosa va storto durante l'evento, sono io che decido—sul momento"
     ],
     "signature": "Rischio logistico reale.<br>Complessità organizzativa reale.<br>Esposizione pubblica reale.<br>Leadership senza autorità formale."
   },
@@ -218,17 +233,17 @@
     "heroSupporting": "La Chiesa è dove trovo uno scopo oltre il lavoro. Mi impegno a portare i valori tradizionali nei contesti contemporanei—rendendo la fede accessibile senza diluire ciò che conta.",
     "myRole": "Il mio ruolo",
     "myRoleList": [
-      "Partecipazione attiva ogni domenica",
-      "Fare la differenza nella comunità",
-      "Unire valori tradizionali e approcci moderni",
-      "Costruire connessioni che vanno oltre la domenica"
+      "Catechista per giovani (12-24 anni) nella mia parrocchia dal 2015",
+      "Incontri settimanali con un gruppo di circa 15 ragazzi",
+      "Parte del consiglio pastorale per la pastorale giovanile",
+      "La Messa domenicale è non negoziabile—è dove inizia la settimana"
     ],
-    "youthEducation": "Educazione dei giovani",
+    "youthEducation": "Cosa faccio con loro",
     "youthEducationList": [
-      "Lavorare con giovani che mi ispirano",
-      "Aiutare a navigare percorsi spirituali con onestà",
-      "Rendere gli insegnamenti rilevanti per la vita contemporanea",
-      "Creare spazio per le domande, non solo per le risposte"
+      "Leggiamo le scritture e discutiamo cosa significano per le loro vite—non teologia astratta",
+      "Parliamo di domande vere: relazioni, dubbi, senso, scelte",
+      "Organizziamo ritiri, progetti di servizio, momenti di riflessione",
+      "Ascolto più di quanto insegno. Le loro domande sono spesso migliori delle mie risposte."
     ],
     "signature": "Innovazione pastorale digitale.<br>Fede e tecnologia connesse.<br>Coinvolgimento della comunità online e offline.<br>Il cambiamento viene da dentro, non da fuori.",
     "visionForChange": "Visione per il cambiamento",

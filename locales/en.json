@@ -59,7 +59,15 @@
       "Decisions with real consequences, not theoretical exercises",
       "Systems that need structure, not noise"
     ],
-    "whatIWorkOnExample": "A concrete example of this is the Palio of Vigevano—an organizational ecology of institutions, associations, sponsors, volunteers, logistics, and real risk—where I lead vision and delivery under ambiguity.",
+    "activitiesTitle": "Activities",
+    "activityAssistudioTitle": "Assistudio",
+    "activityAssistudioText": "Multi-agency insurance firm active since 1986, offering policies, financial advisory, and long-term rental.",
+    "activityIsicoTitle": "ISICO",
+    "activityIsicoText": "Italian Scientific Institute for the Spine: non-surgical spine rehabilitation, research, and training.",
+    "activityScegliNoiTitle": "Scegli Noi",
+    "activityScegliNoiText": "Network of multi-agency insurance firms founded in 2021: professional collaboration and advisory across insurance, finance, and long-term rental.",
+    "activityStayActiveTitle": "StayActive",
+    "activityStayActiveText": "Wearable device with an app that alerts incorrect posture via vibration. Project closed.",
     "howIWork": "How I work",
     "howIWorkList": [
       "I take ownership of outcomes, not just tasks",
@@ -69,24 +77,31 @@
     ],
     "signature": "Physics mindset.<br>Piano discipline.<br>Always asking why.<br>Building for passion, not noise.",
     "family": "Family",
-    "familyText": "Married to Sara. Father of Chiara and Rachele.",
+    "familyText": "Married to Sara, physiotherapist. Father of Chiara and Rachele. The center of everything.",
     "palio": "Palio",
-    "palioText": "Leading the Palio of Vigevano. Coordinating institutions, volunteers, and vision.",
+    "palioText": "President of the Palio of Vigevano since 2022. 50+ volunteers, 4 days of events, one historical race.",
     "faith": "Faith",
-    "faithText": "At church every Sunday. Educator for young people.",
+    "faithText": "Catechist for teenagers in my parish. Sunday Mass, always.",
     "elsewhere": "Elsewhere",
-    "elsewhereText": "Mountains. Piano. Photography.",
+    "elsewhereText": "Alps in summer, classical piano since childhood, photography as observation.",
     "signal": "Forbes Top 100 Under 30 Italy"
   },
   "family": {
     "heroOpening": "What matters most.",
-    "heroSupporting": "Married to Sara. Father of Chiara and Rachele.",
-    "foundation": "Foundation",
+    "heroSupporting": "Married to Sara, physiotherapist. Father of Chiara and Rachele.",
+    "aboutUs": "About us",
+    "aboutUsList": [
+      "Sara is a physiotherapist. We met at university. Together since 2011, married since 2017.",
+      "Chiara and Rachele are our daughters. Raising them is the most important project.",
+      "We live in Vigevano, the town where the Palio happens and where our community is rooted.",
+      "Faith, education, and presence are the values we try to live—not just talk about."
+    ],
+    "foundation": "How we live",
     "foundationList": [
-      "Family comes first",
-      "Building a life together with intention",
-      "Present, not distracted",
-      "Values lived, not just stated"
+      "Sunday is for family and Mass—no exceptions",
+      "Dinner together, phones away",
+      "Vacations in the mountains: hiking, silence, disconnect",
+      "Decisions made together, even the hard ones"
     ],
     "signature": "Mountains.<br>Piano.<br>Photography.<br>Time well spent."
   },
@@ -95,17 +110,17 @@
     "heroSupporting": "A large-scale historical event operating in a non-hierarchical environment where vision and delivery must coexist.",
     "theSystem": "The system",
     "theSystemList": [
-      "Public institutions",
-      "Sponsors and foundations",
-      "Dozens of volunteers and contributors",
-      "Thousands of participants and visitors"
+      "Municipality, Province, local foundations—each with its own timeline and priorities",
+      "10+ sponsors to coordinate, from local businesses to institutional partners",
+      "50+ volunteers across logistics, communication, historical accuracy, safety",
+      "4 days of events, one historical horse race, 10,000+ visitors over the weekend"
     ],
-    "myRole": "My role",
+    "myRole": "What I actually do",
     "myRoleList": [
-      "Hold vision and delivery together",
-      "Take responsibility where formal structure is missing",
-      "Enable coordination across very different actors",
-      "Ensure continuity and reliability year after year"
+      "President since 2022. I'm responsible for the event happening—period.",
+      "I run weekly coordination meetings from March to October",
+      "I manage relationships with institutions, negotiate with sponsors, resolve conflicts",
+      "When something goes wrong during the event, I'm the one who decides—on the spot"
     ],
     "signature": "Real logistical risk.<br>Real organizational complexity.<br>Real public exposure.<br>Leadership without formal authority."
   },
@@ -218,17 +233,17 @@
     "heroSupporting": "The Church is where I find purpose beyond work. I'm committed to bringing traditional values into contemporary contexts—making faith accessible without diluting what matters.",
     "myRole": "My role",
     "myRoleList": [
-      "Active participation every Sunday",
-      "Making a difference in the community",
-      "Bridging traditional values with modern approaches",
-      "Building connections that go beyond Sunday"
+      "Catechist for young people (12-24 years) in my parish since 2015",
+      "Weekly meetings with a group of about 15 young people",
+      "Part of the pastoral council for youth ministry",
+      "Sunday Mass is non-negotiable—it's where the week begins"
     ],
-    "youthEducation": "Youth education",
+    "youthEducation": "What I do with them",
     "youthEducationList": [
-      "Working with young people who inspire me",
-      "Helping navigate spiritual journeys with honesty",
-      "Making teachings relevant to contemporary life",
-      "Creating space for questions, not just answers"
+      "We read scripture and discuss what it means for their lives—not abstract theology",
+      "We talk about real questions: relationships, doubt, meaning, choices",
+      "We organize retreats, service projects, and moments of reflection",
+      "I listen more than I teach. Their questions are often better than my answers."
     ],
     "signature": "Digital pastoral innovation.<br>Faith and technology connected.<br>Community engagement online and offline.<br>Change from within, not from outside.",
     "visionForChange": "Vision for change",
