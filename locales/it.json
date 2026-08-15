@@ -30,14 +30,20 @@
     "church": "Chiesa",
     "finance": "Finanza",
     "projects": "Progetti",
-    "toggleMenu": "Apri menu"
+    "palio": "Palio",
+    "family": "Famiglia",
+    "mainLabel": "Navigazione principale",
+    "homeLabel": "Francesco Dulio — Home page",
+    "toggleMenu": "Apri menu",
+    "closeMenu": "Chiudi menu"
   },
   "footer": {
     "copyright": "Francesco Dulio. Realizzato con dedizione."
   },
   "common": {
     "explore": "Esplora",
-    "links": "Link"
+    "links": "Link",
+    "skipToContent": "Vai al contenuto"
   },
   "links": {
     "palioSite": "Palio di Vigevano",

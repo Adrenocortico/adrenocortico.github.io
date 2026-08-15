@@ -19,6 +19,8 @@ const CONFIG = {
     }
 };
 
+const MOBILE_NAV_BREAKPOINT = 1100;
+
 // ===============================================
 // DOM READY
 // ===============================================
@@ -128,7 +130,7 @@ function initializeMobileMenu() {
         }
 
         // Close menu when clicking nav links (but not language buttons)
-        if (navLink && !langBtn && window.innerWidth <= 768) {
+        if (navLink && !langBtn && window.innerWidth <= MOBILE_NAV_BREAKPOINT) {
             closeMobileMenu();
         }
     });
@@ -136,13 +138,19 @@ function initializeMobileMenu() {
     // Close menu on escape key
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
+            const wasOpen = document.querySelector('.nav-links')?.classList.contains('active');
             closeMobileMenu();
+            if (wasOpen) document.querySelector('.menu-toggle')?.focus();
+        }
+
+        if (e.key === 'Tab') {
+            keepFocusInsideMobileMenu(e);
         }
     });
 
     // Close menu on resize to desktop
     window.addEventListener('resize', () => {
-        if (window.innerWidth > 768) {
+        if (window.innerWidth > MOBILE_NAV_BREAKPOINT) {
             closeMobileMenu();
         }
     });
@@ -153,9 +161,39 @@ function toggleMobileMenu() {
     const navLinks = document.querySelector('.nav-links');
 
     if (menuToggle && navLinks) {
-        menuToggle.classList.toggle('active');
-        navLinks.classList.toggle('active');
-        document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+        const isOpen = navLinks.classList.toggle('active');
+        menuToggle.classList.toggle('active', isOpen);
+        menuToggle.setAttribute('aria-expanded', String(isOpen));
+        updateMobileMenuLabel(menuToggle, isOpen);
+        document.body.style.overflow = isOpen ? 'hidden' : '';
+
+        if (isOpen) {
+            setTimeout(() => getVisibleMenuItems(navLinks)[0]?.focus(), 80);
+        }
+    }
+}
+
+function getVisibleMenuItems(navLinks) {
+    return [...navLinks.querySelectorAll('a, button')]
+        .filter(element => window.getComputedStyle(element).display !== 'none');
+}
+
+function keepFocusInsideMobileMenu(event) {
+    const navLinks = document.querySelector('.nav-links');
+    if (!navLinks?.classList.contains('active')) return;
+
+    const focusableItems = getVisibleMenuItems(navLinks);
+    if (focusableItems.length === 0) return;
+
+    const firstItem = focusableItems[0];
+    const lastItem = focusableItems[focusableItems.length - 1];
+
+    if (event.shiftKey && document.activeElement === firstItem) {
+        event.preventDefault();
+        lastItem.focus();
+    } else if (!event.shiftKey && document.activeElement === lastItem) {
+        event.preventDefault();
+        firstItem.focus();
     }
 }
 
@@ -166,8 +204,17 @@ function closeMobileMenu() {
     if (menuToggle && navLinks) {
         menuToggle.classList.remove('active');
         navLinks.classList.remove('active');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        updateMobileMenuLabel(menuToggle, false);
         document.body.style.overflow = '';
     }
+}
+
+function updateMobileMenuLabel(menuToggle, isOpen) {
+    const key = isOpen ? 'closeMenu' : 'toggleMenu';
+    const fallback = isOpen ? 'Close menu' : 'Toggle menu';
+    const label = I18N.translations.nav?.[key] || fallback;
+    menuToggle.setAttribute('aria-label', label);
 }
 
 // ===============================================
@@ -236,16 +283,17 @@ function initializeCardAnimations() {
 function initializeHomepageSections() {
     // Only run on homepage
     if (!document.body.classList.contains('homepage')) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
     const sections = document.querySelectorAll('.content-section, .signature-section, .human-section, .signal-section, .explore-section');
 
     if (sections.length === 0) return;
 
     // Add initial hidden state
-    sections.forEach((section, index) => {
+    sections.forEach((section) => {
         section.style.opacity = '0';
         section.style.transform = 'translateY(30px)';
-        section.style.transition = `opacity 0.8s ease ${index * 0.15}s, transform 0.8s ease ${index * 0.15}s`;
+        section.style.transition = 'opacity 0.55s ease-out, transform 0.55s ease-out';
     });
 
     // Create intersection observer for sections
@@ -346,6 +394,7 @@ function initializeSmoothScroll() {
 function initializeParallax() {
     const hero = document.querySelector('.hero');
     if (!hero) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
     // Skip aggressive parallax on homepage (refined hero)
     if (hero.classList.contains('hero-refined')) {
@@ -654,6 +703,11 @@ const I18N = {
             }
         });
 
+        document.querySelectorAll('[data-i18n-aria-label]').forEach(el => {
+            const translation = this.t(el.getAttribute('data-i18n-aria-label'));
+            if (typeof translation === 'string') el.setAttribute('aria-label', translation);
+        });
+
         // Apply translations to lists
         document.querySelectorAll('[data-i18n-list]').forEach(ul => {
             const key = ul.getAttribute('data-i18n-list');
@@ -685,7 +739,9 @@ const I18N = {
             'software': 'nav.software',
             'church': 'nav.church',
             'finance': 'nav.finance',
-            'projects': 'nav.projects'
+            'projects': 'nav.projects',
+            'palio': 'nav.palio',
+            'family': 'nav.family'
         };
 
         // Update main nav links
@@ -708,12 +764,15 @@ const I18N = {
     updateLanguageSwitcher() {
         document.querySelectorAll('.lang-btn').forEach(btn => {
             const lang = btn.getAttribute('data-lang');
-            if (lang === this.currentLang) {
-                btn.classList.add('active');
-            } else {
-                btn.classList.remove('active');
-            }
+            const isActive = lang === this.currentLang;
+            btn.classList.toggle('active', isActive);
+            btn.setAttribute('aria-pressed', String(isActive));
         });
+
+        const menuToggle = document.querySelector('.menu-toggle');
+        if (menuToggle) {
+            updateMobileMenuLabel(menuToggle, menuToggle.getAttribute('aria-expanded') === 'true');
+        }
     },
 
     // Switch language
@@ -737,16 +796,13 @@ const I18N = {
         const lang = this.detectLanguage();
         await this.loadTranslations(lang);
 
-        // Apply translations after components are loaded
-        // We use a small delay to ensure header/footer are loaded
-        setTimeout(() => {
-            this.applyTranslations();
-        }, 100);
+        // Translate page content and start page-specific data loading deterministically.
+        this.applyTranslations();
+        initializeGitHubProjects();
 
         // Also apply when components are done loading
         document.addEventListener('componentsLoaded', () => {
             this.applyTranslations();
-            initializeGitHubProjects();
         });
 
         // Set up language switcher event delegation
