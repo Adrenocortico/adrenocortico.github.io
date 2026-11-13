@@ -19,20 +19,21 @@ const CONFIG = {
     }
 };
 
-const MOBILE_NAV_BREAKPOINT = 1100;
+const MOBILE_NAV_BREAKPOINT = 1280;
 
 // ===============================================
 // DOM READY
 // ===============================================
 
+let initializeComponentsPromise;
+
 document.addEventListener('DOMContentLoaded', () => {
-    initializeComponents();
+    initializeComponentsPromise = initializeComponents();
     initializeNavigation();
     initializeMobileMenu();
     initializeScrollEffects();
     initializeCardAnimations();
-    initializeHomepageSections();
-    initializeCursorGlow();
+    initializeStudioExperience();
     initializeSmoothScroll();
     initializeParallax();
 });
@@ -277,94 +278,6 @@ function initializeCardAnimations() {
 }
 
 // ===============================================
-// HOMEPAGE SECTIONS ANIMATION
-// ===============================================
-
-function initializeHomepageSections() {
-    // Only run on homepage
-    if (!document.body.classList.contains('homepage')) return;
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-
-    const sections = document.querySelectorAll('.content-section, .signature-section, .human-section, .signal-section, .explore-section');
-
-    if (sections.length === 0) return;
-
-    // Add initial hidden state
-    sections.forEach((section) => {
-        section.style.opacity = '0';
-        section.style.transform = 'translateY(30px)';
-        section.style.transition = 'opacity 0.55s ease-out, transform 0.55s ease-out';
-    });
-
-    // Create intersection observer for sections
-    const sectionObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-                sectionObserver.unobserve(entry.target);
-            }
-        });
-    }, {
-        threshold: 0.1,
-        rootMargin: '0px 0px -30px 0px'
-    });
-
-    // Observe all sections
-    sections.forEach(section => sectionObserver.observe(section));
-}
-
-// ===============================================
-// CURSOR GLOW EFFECT
-// ===============================================
-
-function initializeCursorGlow() {
-    // Skip on touch devices
-    if (!CONFIG.cursor.enabled || window.matchMedia('(hover: none)').matches) {
-        return;
-    }
-
-    // Create cursor glow element
-    const cursorGlow = document.createElement('div');
-    cursorGlow.className = 'cursor-glow';
-    document.body.appendChild(cursorGlow);
-
-    let mouseX = 0;
-    let mouseY = 0;
-    let currentX = 0;
-    let currentY = 0;
-
-    // Track mouse position
-    document.addEventListener('mousemove', (e) => {
-        mouseX = e.clientX;
-        mouseY = e.clientY;
-    });
-
-    // Smooth animation loop
-    function animateCursor() {
-        // Lerp for smooth following
-        currentX += (mouseX - currentX) * CONFIG.cursor.smoothing;
-        currentY += (mouseY - currentY) * CONFIG.cursor.smoothing;
-
-        cursorGlow.style.left = `${currentX}px`;
-        cursorGlow.style.top = `${currentY}px`;
-
-        requestAnimationFrame(animateCursor);
-    }
-
-    animateCursor();
-
-    // Hide cursor glow when mouse leaves window
-    document.addEventListener('mouseleave', () => {
-        cursorGlow.style.opacity = '0';
-    });
-
-    document.addEventListener('mouseenter', () => {
-        cursorGlow.style.opacity = '1';
-    });
-}
-
-// ===============================================
 // SMOOTH SCROLL
 // ===============================================
 
@@ -379,8 +292,9 @@ function initializeSmoothScroll() {
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
             e.preventDefault();
+            if (targetElement.hasAttribute('tabindex')) targetElement.focus({ preventScroll: true });
             targetElement.scrollIntoView({
-                behavior: 'smooth',
+                behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
                 block: 'start'
             });
         }
@@ -748,7 +662,7 @@ const I18N = {
         document.querySelectorAll('.nav-links a, .explore-nav a').forEach(link => {
             const href = link.getAttribute('href');
             if (!href) return;
-            const normalizedHref = href.replace(/\/+$/, '').replace(/\.html$/, '');
+            const normalizedHref = href.replace(/^\/+|\/+$/g, '').replace(/\.html$/, '') || 'index';
             if (navMappings[normalizedHref]) {
                 link.textContent = this.t(navMappings[normalizedHref]);
             }
@@ -797,6 +711,7 @@ const I18N = {
         await this.loadTranslations(lang);
 
         // Translate page content and start page-specific data loading deterministically.
+        await initializeComponentsPromise;
         this.applyTranslations();
         initializeGitHubProjects();
 
@@ -820,3 +735,189 @@ const I18N = {
 document.addEventListener('DOMContentLoaded', () => {
     I18N.init();
 });
+
+// ===============================================
+// CONNECTED WORLDS — procedural sculpture & motion
+// ===============================================
+function initializeStudioExperience() {
+    const scene = document.querySelector('.orbital-scene');
+    if (!scene) return;
+
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const pauseButton = scene.querySelector('.motion-toggle');
+    let paused = false;
+    let refreshScene = () => {};
+    const updateMotionControl = () => {
+        const stopped = paused || reducedMotion.matches;
+        document.body.dataset.motion = stopped ? 'paused' : 'running';
+        pauseButton.setAttribute('aria-pressed', String(stopped));
+        pauseButton.setAttribute('data-i18n-aria-label', stopped ? 'studio.resumeMotion' : 'studio.pauseMotion');
+        pauseButton.setAttribute('aria-label', I18N.t(stopped ? 'studio.resumeMotion' : 'studio.pauseMotion'));
+        pauseButton.querySelector('span').textContent = stopped ? '▶' : 'Ⅱ';
+        pauseButton.disabled = reducedMotion.matches;
+        if (reducedMotion.matches) {
+            pauseButton.setAttribute('data-i18n-aria-label', 'studio.reducedMotion');
+            pauseButton.setAttribute('aria-label', I18N.t('studio.reducedMotion'));
+        }
+    };
+    // Locale data is asynchronous; keep the HTML label until translations are ready.
+    const motionLabelObserver = new MutationObserver(() => {
+        updateMotionControl();
+    });
+    motionLabelObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
+
+    const revealObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('[data-reveal]').forEach(element => {
+        if (!reducedMotion.matches) element.classList.add('reveal-ready');
+        revealObserver.observe(element);
+    });
+
+    pauseButton.addEventListener('click', () => {
+        paused = !paused;
+        updateMotionControl();
+        refreshScene();
+    });
+    reducedMotion.addEventListener('change', () => {
+        updateMotionControl();
+        refreshScene();
+    });
+
+    scene.classList.add('motion-ready');
+    const canvas = document.getElementById('systems-canvas');
+    const theme = getComputedStyle(document.documentElement);
+    const colors = Object.fromEntries(['emerald', 'orange', 'ultramarine-light'].map(name =>
+        [name, theme.getPropertyValue(`--${name}`).trim()]));
+    const context = canvas.getContext('2d');
+    if (!context) return;
+    let width = 0;
+    let height = 0;
+    let frame = 0;
+    let lastFrame = 0;
+    let phase = 0;
+    let visible = true;
+    let pointerX = 0;
+    let pointerY = 0;
+    let rotationX = 0;
+    let rotationY = 0;
+
+    function project(x, y, z, tilt, turn) {
+        const x1 = x * Math.cos(turn) + z * Math.sin(turn);
+        const z1 = -x * Math.sin(turn) + z * Math.cos(turn);
+        const y1 = y * Math.cos(tilt) - z1 * Math.sin(tilt);
+        const depth = y * Math.sin(tilt) + z1 * Math.cos(tilt);
+        const perspective = 680 / (680 + depth);
+        const scale = Math.min(width, height) / 600;
+        return { x: width / 2 + x1 * perspective * scale, y: height / 2 + y1 * perspective * scale, depth };
+    }
+
+    function draw() {
+        context.clearRect(0, 0, width, height);
+        const tilt = .85 + rotationY;
+        const turn = -.5 + phase * .2 + rotationX;
+        // A woven torus: geometry is computed locally, with no model or WebGL dependency.
+        const paths = [];
+        for (let ring = 0; ring < 56; ring++) {
+            const u = ring / 56 * Math.PI * 2;
+            const points = [];
+            let depth = 0;
+            for (let segment = 0; segment <= 64; segment++) {
+                const v = segment / 64 * Math.PI * 2;
+                const radius = 136 + 58 * Math.cos(v);
+                const twist = u + .22 * Math.sin(v + phase * .25);
+                const point = project(radius * Math.cos(twist), radius * Math.sin(twist), 58 * Math.sin(v), tilt, turn);
+                points.push(point);
+                depth += point.depth;
+            }
+            paths.push({ points, depth: depth / points.length });
+        }
+        paths.sort((a, b) => b.depth - a.depth).forEach(path => {
+            const light = Math.max(.12, Math.min(.8, .45 - path.depth / 460));
+            context.strokeStyle = colors.emerald;
+            context.globalAlpha = light;
+            context.lineWidth = .7;
+            context.beginPath();
+            path.points.forEach((point, i) => i ? context.lineTo(point.x, point.y) : context.moveTo(point.x, point.y));
+            context.stroke();
+        });
+        context.globalAlpha = 1;
+        // Satellite paths connect the three disciplines around the central system.
+        for (let orbit = 0; orbit < 3; orbit++) {
+            context.beginPath();
+            context.strokeStyle = orbit === 1 ? `${colors['ultramarine-light']}80` : `${colors.orange}60`;
+            context.lineWidth = .7;
+            for (let step = 0; step <= 120; step++) {
+                const angle = step / 120 * Math.PI * 2;
+                const point = project(244 * Math.cos(angle), 244 * Math.sin(angle), 0, tilt + orbit * .9, turn + orbit * 1.1);
+                if (step === 0) context.moveTo(point.x, point.y); else context.lineTo(point.x, point.y);
+            }
+            context.stroke();
+            const angle = phase * (.3 + orbit * .07) + orbit * 2;
+            const satellite = project(244 * Math.cos(angle), 244 * Math.sin(angle), 0, tilt + orbit * .9, turn + orbit * 1.1);
+            context.beginPath();
+            context.arc(satellite.x, satellite.y, 3, 0, Math.PI * 2);
+            context.fillStyle = orbit === 1 ? colors['ultramarine-light'] : colors.orange;
+            context.fill();
+        }
+        const center = project(0, 0, 0, tilt, turn);
+        context.fillStyle = '#f3f0e8';
+        context.font = `${Math.max(10, width * .022)}px 'DM Mono', monospace`;
+        context.textAlign = 'center';
+        context.fillText('FD', center.x, center.y + 4);
+    }
+
+    function animate(timestamp) {
+        frame = 0;
+        if (!visible || document.hidden || paused || reducedMotion.matches) return;
+        if (timestamp - lastFrame > 32) {
+            phase += Math.min((timestamp - lastFrame) / 1000, .05);
+            rotationX += (pointerX - rotationX) * .055;
+            rotationY += (pointerY - rotationY) * .055;
+            draw();
+            lastFrame = timestamp;
+        }
+        frame = requestAnimationFrame(animate);
+    }
+    function syncAnimation() {
+        cancelAnimationFrame(frame);
+        frame = 0;
+        draw();
+        if (visible && !document.hidden && !paused && !reducedMotion.matches) {
+            lastFrame = performance.now();
+            frame = requestAnimationFrame(animate);
+        }
+    }
+    const resizeObserver = new ResizeObserver(() => {
+        width = scene.clientWidth;
+        height = scene.clientHeight;
+        const ratio = Math.min(window.devicePixelRatio || 1, 2);
+        canvas.width = Math.round(width * ratio);
+        canvas.height = Math.round(height * ratio);
+        context.setTransform(ratio, 0, 0, ratio, 0, 0);
+        draw();
+        scene.classList.add('canvas-ready');
+    });
+    resizeObserver.observe(scene);
+    const sceneObserver = new IntersectionObserver(entries => {
+        visible = entries[0].isIntersecting;
+        syncAnimation();
+    });
+    sceneObserver.observe(scene);
+    scene.addEventListener('pointermove', event => {
+        if (event.pointerType !== 'mouse' || paused || reducedMotion.matches) return;
+        const bounds = scene.getBoundingClientRect();
+        pointerX = ((event.clientX - bounds.left) / bounds.width - .5) * .65;
+        pointerY = ((event.clientY - bounds.top) / bounds.height - .5) * .45;
+    });
+    scene.addEventListener('pointerleave', () => { pointerX = 0; pointerY = 0; });
+    refreshScene = syncAnimation;
+    document.addEventListener('visibilitychange', syncAnimation);
+    document.body.dataset.motion = reducedMotion.matches ? 'paused' : 'running';
+    syncAnimation();
+}

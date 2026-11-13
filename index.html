@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Francesco Dulio - Building complex systems in ambiguous contexts. Working at the intersection of vision, decisions, and delivery.">
-    <meta name="theme-color" content="#0a0a0f">
-    <title>Francesco Dulio</title>
+        content="Lavoro tra assicurazioni, software e progetti per il territorio. Mi piace seguire le idee dalle prime domande alle scelte necessarie per farle funzionare.">
+    <meta name="theme-color" content="#151613">
+    <title>Francesco Dulio — CEO, prodotto e sviluppo</title>
     <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -15,207 +15,550 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
-<body class="homepage">
-    <div id="header"></div>
-
-    <section class="hero hero-refined hero-home">
-        <div class="container hero-content">
-            <h1 class="hero-opening" data-i18n="index.heroOpening">Building complex systems in ambiguous contexts.</h1>
-            <p class="hero-supporting" data-i18n="index.heroSupporting">I work at the intersection of vision, decisions,
-                and delivery—where structure is missing and responsibility matters.</p>
-            <a href="mailto:francesco@dulio.it" class="hero-cta">francesco@dulio.it</a>
+<body class="homepage ceo-profile">
+    <div id="header">
+    </div>
+    <main id="main-content" tabindex="-1">
+        <section class="studio-hero container" aria-labelledby="studio-title">
+            <div class="hero-meta">
+                <span>
+                    <span class="status-dot" aria-hidden="true">
+                    </span>
+                    <span data-i18n="studio.location">Vigevano, Italia</span>
+                </span>
+                <span data-i18n="studio.discipline">Impresa · Persone · Prodotto</span>
+            </div>
+            <div class="hero-stage">
+                <div class="studio-intro">
+                    <p class="eyebrow" data-i18n="studio.intro">Francesco Dulio / CEO &amp; developer</p>
+                    <h1 id="studio-title">
+                        <span data-i18n="studio.heroOne">Faccio impresa.</span>
+                        <br>
+                        <em data-i18n="studio.heroTwo" data-i18n-html>Mi occupo di persone<br>e prodotti.</em>
+                        <br>
+                        <span data-i18n="studio.heroThree">Scrivo anche codice.</span>
+                    </h1>
+                    <p class="studio-description" data-i18n="studio.description">Lavoro tra assicurazioni, software e progetti per il territorio. Mi piace seguire le idee dalle prime domande alle scelte necessarie per farle funzionare.</p>
+                    <div class="hero-actions">
+                        <a class="button-primary" href="#method-title">
+                            <span data-i18n="studio.exploreWork">Il mio modo di lavorare</span>
+                            <span aria-hidden="true">
+                                ↗
+                            </span>
+                        </a>
+                        <a class="text-link" href="mailto:francesco@dulio.it" data-i18n="studio.sayHello">Parliamone ↗</a>
+                    </div>
+                </div>
+                <div class="orbital-scene">
+                    <div class="scene-coordinate" aria-hidden="true">
+                        FD—01 / CONNECTED SYSTEMS
+                    </div>
+                    <svg class="orbital-fallback" viewBox="0 0 600 600" fill="none" aria-hidden="true">
+                        <g stroke="var(--primary)" stroke-width="1">
+                            <ellipse cx="300" cy="300" rx="210" ry="92" transform="rotate(-35 300 300)"/>
+                            <ellipse cx="300" cy="300" rx="210" ry="92" transform="rotate(35 300 300)"/>
+                            <ellipse cx="300" cy="300" rx="210" ry="92" transform="rotate(90 300 300)"/>
+                            <circle cx="300" cy="300" r="145"/>
+                            <circle cx="300" cy="300" r="130" stroke-dasharray="2 8"/>
+                        </g>
+                        <circle cx="300" cy="300" r="36" fill="var(--primary)"/>
+                    </svg>
+                    <canvas id="systems-canvas" aria-hidden="true">
+                    </canvas>
+                    <a class="orbit-label orbit-label-top" href="entrepreneurship.html">
+                        <span class="orbit-dot" aria-hidden="true">
+                        </span>
+                        <span data-i18n="studio.enterprise">Impresa</span>
+                        <span aria-hidden="true">
+                            ↗
+                        </span>
+                    </a>
+                    <a class="orbit-label orbit-label-right" href="software.html">
+                        <span class="orbit-dot" aria-hidden="true">
+                        </span>
+                        <span data-i18n="nav.software">Software</span>
+                        <span aria-hidden="true">
+                            ↗
+                        </span>
+                    </a>
+                    <a class="orbit-label orbit-label-bottom" href="palio.html">
+                        <span class="orbit-dot" aria-hidden="true">
+                        </span>
+                        <span data-i18n="studio.community">Comunità</span>
+                        <span aria-hidden="true">
+                            ↗
+                        </span>
+                    </a>
+                    <div class="scene-bottom">
+                        <span data-i18n="studio.sceneCaption">Impresa, prodotto e capacità di realizzarlo.</span>
+                        <button class="motion-toggle" type="button" aria-pressed="false" data-i18n-aria-label="studio.pauseMotion" aria-label="Metti in pausa le animazioni">
+                            <span aria-hidden="true">
+                                Ⅱ
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-footnote">
+                <span data-i18n="studio.footnote">Dalle prime scelte al lavoro di ogni giorno.</span>
+                <a href="#selected-work">
+                    <span data-i18n="studio.scroll">Scopri di più</span>
+                    <span aria-hidden="true">
+                        ↓
+                    </span>
+                </a>
+            </div>
+        </section>
+        <div class="discipline-strip" aria-hidden="true">
+            <div>
+                <span>
+                    BUSINESS &amp; PEOPLE
+                </span>
+                <b>
+                    ✳
+                </b>
+                <span>
+                    PRODUCT &amp; PURPOSE
+                </span>
+                <b>
+                    ✳
+                </b>
+                <span>
+                    CODE &amp; CURIOSITY
+                </span>
+                <b>
+                    ✳
+                </b>
+                <span>
+                    BUSINESS &amp; PEOPLE
+                </span>
+                <b>
+                    ✳
+                </b>
+                <span>
+                    PRODUCT &amp; PURPOSE
+                </span>
+                <b>
+                    ✳
+                </b>
+                <span>
+                    CODE &amp; CURIOSITY
+                </span>
+                <b>
+                    ✳
+                </b>
+            </div>
         </div>
-    </section>
-
-    <main class="container homepage-main" id="main-content" tabindex="-1">
-        <!-- What I Work On -->
-        <section class="content-section">
-            <h2 class="section-heading" data-i18n="index.whatIWorkOn">What I work on</h2>
-            <ul class="context-list" data-i18n-list="index.whatIWorkOnList">
-                <li>Multi-stakeholder systems where alignment isn't given</li>
-                <li>High ambiguity and variability—where playbooks don't exist</li>
-                <li>Decisions with real consequences, not theoretical exercises</li>
-                <li>Systems that need structure, not noise</li>
-            </ul>
-        </section>
-
-        <section class="content-section">
-            <h2 class="section-heading" data-i18n="index.activitiesTitle">Activities</h2>
-            <div class="human-grid">
-                <div class="human-item">
-                    <i class="fa-solid fa-briefcase human-icon"></i>
-                    <span class="human-label" data-i18n="index.activityAssistudioTitle">Assistudio</span>
-                    <p data-i18n="index.activityAssistudioText">Ongoing work in insurance and financial systems.</p>
+        <section class="manifesto" aria-labelledby="method-title">
+            <div class="container manifesto-grid">
+                <div>
+                    <span class="eyebrow" data-i18n="studio.methodLabel">01 / Direzione, persone e scelte</span>
+                    <div class="method-symbol" aria-hidden="true">
+                        ✳
+                    </div>
                 </div>
-                <div class="human-item">
-                    <i class="fa-solid fa-heart-pulse human-icon"></i>
-                    <span class="human-label" data-i18n="index.activityIsicoTitle">ISICO</span>
-                    <p data-i18n="index.activityIsicoText">Clinical and rehabilitation workflows where accuracy matters.</p>
-                </div>
-                <div class="human-item">
-                    <i class="fa-solid fa-handshake human-icon"></i>
-                    <span class="human-label" data-i18n="index.activityScegliNoiTitle">Scegli Noi</span>
-                    <p data-i18n="index.activityScegliNoiText">Active initiative.</p>
-                </div>
-                <div class="human-item">
-                    <i class="fa-solid fa-person-running human-icon"></i>
-                    <span class="human-label" data-i18n="index.activityStayActiveTitle">StayActive</span>
-                    <p data-i18n="index.activityStayActiveText">Startup at the intersection of technology and health, now closed.</p>
+                <div>
+                    <h2 id="method-title" data-i18n="studio.methodTitle" data-i18n-html>Capire cosa serve.<br>Scegliere cosa fare.<br><em>Portarlo avanti.</em></h2>
+                    <p class="method-description" data-i18n="studio.methodDescription">Mi occupo di far incontrare bisogni, persone e risorse. Vuol dire scegliere le priorità, fare i conti con tempi e sostenibilità economica, creare le condizioni per lavorare insieme. La competenza tecnica mi permette di entrare nel prodotto e valutarne anche i dettagli.</p>
+                    <ol class="method-list">
+                        <li>
+                            <span data-i18n="studio.methodOne">Chiarire il bisogno, gli obiettivi e le risorse disponibili.</span>
+                        </li>
+                        <li>
+                            <span data-i18n="studio.methodTwo">Condividere priorità e responsabilità con le persone coinvolte.</span>
+                        </li>
+                        <li>
+                            <span data-i18n="studio.methodThree">Seguire i risultati e rivedere le scelte quando serve.</span>
+                        </li>
+                    </ol>
                 </div>
             </div>
         </section>
-
-        <!-- How I Work -->
-        <section class="content-section">
-            <h2 class="section-heading" data-i18n="index.howIWork">How I work</h2>
-            <ul class="declarative-list" data-i18n-list="index.howIWorkList">
-                <li>I take ownership of outcomes, not just tasks</li>
-                <li>I make decisions when information is incomplete</li>
-                <li>I build for durability, not demonstration</li>
-                <li>I say no to things that don't matter</li>
-            </ul>
-        </section>
-
-        <!-- Personal Signature -->
-        <section class="signature-section">
-            <p class="signature-text" data-i18n="index.signature" data-i18n-html>
-                Physics mindset.<br>
-                Piano discipline.<br>
-                Always asking why.<br>
-                Building for passion, not noise.
-            </p>
-        </section>
-
-        <!-- Human Presence -->
-        <section class="human-section">
-            <div class="human-grid">
-                <div class="human-item">
-                    <i class="fa-solid fa-users human-icon"></i>
-                    <span class="human-label" data-i18n="index.family">Family</span>
-                    <p data-i18n="index.familyText">Married to Sara, physiotherapist. Father of Chiara and Rachele. The center of everything.</p>
+        <section class="selected-work container" id="selected-work" aria-labelledby="work-title">
+            <div class="section-topline">
+                <span class="eyebrow" data-i18n="studio.workLabel">02 / Dove prende forma il lavoro</span>
+                <a class="text-link" href="projects.html">
+                    <span data-i18n="studio.allProjects">Tutti i progetti</span>
+                    ↗
+                </a>
+            </div>
+            <div class="section-intro">
+                <h2 id="work-title" data-i18n="studio.workTitle" data-i18n-html>Impresa, prodotto<br>e territorio.</h2>
+                <p data-i18n="studio.workIntro">Il mio contributo cambia con il contesto: organizzazione e scelte d’impresa, sviluppo di un prodotto, coordinamento di un evento. Cerco di tenere insieme la direzione e ciò che serve per realizzarla.</p>
+            </div>
+            <a class="work-row work-insurance" href="insurance.html" data-reveal>
+                <div class="work-art insurance-art" aria-hidden="true">
+                    <div class="art-grid">
+                    </div>
+                    <div class="system-flow">
+                        <span>
+                            01
+                        </span>
+                        <i>
+                        </i>
+                        <span>
+                            02
+                        </span>
+                        <i>
+                        </i>
+                        <span>
+                            03
+                        </span>
+                    </div>
+                    <div class="flow-core">
+                        a
+                        <span>
+                            ↗
+                        </span>
+                    </div>
+                    <span class="art-caption">
+                        LESS FRICTION. MORE HUMAN.
+                    </span>
                 </div>
-                <div class="human-item">
-                    <i class="fa-solid fa-chess-rook human-icon"></i>
-                    <span class="human-label" data-i18n="index.palio">Palio</span>
-                    <p data-i18n="index.palioText">President of the Palio of Vigevano since 2022. 50+ volunteers, 4 days of events, one historical race.</p>
+                <div class="work-info">
+                    <span class="eyebrow" data-i18n="studio.insuranceCategory">01 — Impresa / Organizzazione</span>
+                    <h3>
+                        Assistudio
+                    </h3>
+                    <p data-i18n="studio.insuranceText">In Assistudio tengo insieme il lavoro assicurativo, l’organizzazione e gli strumenti digitali. Le scelte sui processi e sul software partono dalle esigenze di clienti e colleghi.</p>
+                    <div class="work-tags">
+                        <span data-i18n="studio.insuranceTag">Assicurazioni</span>
+                        <span>
+                            AI &amp; workflow
+                        </span>
+                    </div>
                 </div>
-                <div class="human-item">
-                    <i class="fa-solid fa-church human-icon"></i>
-                    <span class="human-label" data-i18n="index.faith">Faith</span>
-                    <p data-i18n="index.faithText">Catechist for teenagers in my parish. Sunday Mass, always.</p>
+                <span class="work-arrow" aria-hidden="true">
+                    ↗
+                </span>
+            </a>
+            <a class="work-row work-network" id="scegli-noi" href="insurance.html#scegli-noi" data-reveal>
+                <div class="work-art network-art" aria-hidden="true">
+                    <div class="art-grid"></div>
+                    <span class="network-count">10</span>
+                    <span class="network-agents" data-i18n="studio.networkAgents">Agenti assicurativi</span>
+                    <div class="network-members"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
                 </div>
-                <div class="human-item">
-                    <i class="fa-solid fa-mountain human-icon"></i>
-                    <span class="human-label" data-i18n="index.elsewhere">Elsewhere</span>
-                    <p data-i18n="index.elsewhereText">Alps in summer, classical piano since childhood, photography as observation.</p>
+                <div class="work-info">
+                    <span class="eyebrow" data-i18n="studio.networkCategory">02 — Impresa / Collaborazione</span>
+                    <h3>Scegli Noi</h3>
+                    <p data-i18n="studio.networkText">Sono socio e agente di Scegli Noi, una società di 10 agenti nata dall’esperienza di una rete di imprese. Lavoriamo mettendo in comune competenze e punti di vista diversi.</p>
+                    <div class="work-tags"><span data-i18n="studio.networkTag">Socio e agente</span><span data-i18n="studio.enterprise">Impresa</span></div>
                 </div>
+                <span class="work-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="work-row work-health" href="projects.html#healthcare" data-reveal>
+                <div class="work-art health-art" aria-hidden="true">
+                    <div class="art-grid">
+                    </div>
+                    <div class="health-orbit">
+                    </div>
+                    <div class="health-phone">
+                        <span class="phone-island">
+                        </span>
+                        <span class="phone-brand">
+                            ISICO
+                        </span>
+                        <span class="phone-line">
+                        </span>
+                        <svg viewBox="0 0 160 100">
+                            <path d="M80 4C35 12 35 35 80 48S125 84 80 96"/>
+                        </svg>
+                        <div class="phone-bars">
+                            <i>
+                            </i>
+                            <i>
+                            </i>
+                            <i>
+                            </i>
+                            <i>
+                            </i>
+                        </div>
+                        <span class="phone-caption">
+                            ISICOApp
+                        </span>
+                    </div>
+                    <span class="art-caption">
+                        HUMAN-CENTERED SOFTWARE
+                    </span>
+                </div>
+                <div class="work-info">
+                    <span class="eyebrow" data-i18n="studio.healthCategory">03 — Prodotto / Software</span>
+                    <h3>
+                        ISICOApp
+                    </h3>
+                    <p data-i18n="studio.healthText">In ISICOApp contribuisco allo sviluppo del prodotto, traducendo le esigenze di pazienti e professionisti in scelte concrete di software e interfaccia.</p>
+                    <div class="work-tags">
+                        <span>
+                            iOS &amp; watchOS
+                        </span>
+                        <span data-i18n="studio.healthTag">Accessibilità</span>
+                    </div>
+                </div>
+                <span class="work-arrow" aria-hidden="true">
+                    ↗
+                </span>
+            </a>
+            <a class="work-row work-palio" href="palio.html" data-reveal>
+                <div class="work-art palio-art" aria-hidden="true">
+                    <div class="palio-sun">
+                    </div>
+                    <div class="palio-architecture">
+                        <i>
+                        </i>
+                        <i>
+                        </i>
+                        <i>
+                        </i>
+                        <i>
+                        </i>
+                        <i>
+                        </i>
+                    </div>
+                    <span class="palio-wordmark">
+                        PALIO
+                        <span>
+                            DI VIGEVANO
+                        </span>
+                    </span>
+                    <span class="art-caption">
+                        A CITY. A SHARED STORY.
+                    </span>
+                </div>
+                <div class="work-info">
+                    <span class="eyebrow" data-i18n="studio.palioCategory">04 — Territorio / Comunità</span>
+                    <h3 data-i18n="projects.palioTitle">Palio di Vigevano</h3>
+                    <p data-i18n="studio.palioText">Come presidente di Sforzinda seguo persone, relazioni e organizzazione del Palio. Porto anche la capacità di realizzare gli strumenti digitali che accompagnano il lavoro.</p>
+                    <div class="work-tags">
+                        <span data-i18n="studio.palioTag">Coordinamento</span>
+                        <span data-i18n="studio.community">Comunità</span>
+                    </div>
+                </div>
+                <span class="work-arrow" aria-hidden="true">
+                    ↗
+                </span>
+            </a>
+            <div class="other-work">
+                <span class="eyebrow" data-i18n="studio.also">Anche nel percorso</span>
+                <a href="entrepreneurship.html">
+                    StayActive
+                    <span data-i18n="studio.closed">/ progetto concluso</span>
+                    ↗
+                </a>
+                <a href="software.html" data-i18n="studio.automations">Prodotto &amp; software ↗</a>
             </div>
         </section>
-
-        <!-- Restrained Signal -->
-        <section class="signal-section">
-            <p class="signal-text" data-i18n="index.signal">Forbes Top 100 Under 30 Italy</p>
+        <section class="personal-section container" aria-labelledby="personal-title">
+            <div class="section-topline">
+                <span class="eyebrow" data-i18n="studio.personalLabel">03 / Il resto della storia</span>
+                <span class="little-star" aria-hidden="true">
+                    ✳
+                </span>
+            </div>
+            <div class="section-intro">
+                <h2 id="personal-title" data-i18n="studio.personalTitle" data-i18n-html>Il lavoro, e tutto<br>quello che gli sta intorno.</h2>
+                <p data-i18n="studio.personalIntro">La famiglia, la fede, la montagna, il pianoforte. Sono parti della mia vita che si intrecciano anche con il mio modo di lavorare.</p>
+            </div>
+            <div class="personal-grid">
+                <a class="personal-card" href="family.html">
+                    <span class="personal-icon" aria-hidden="true">
+                        ◎
+                    </span>
+                    <h3 data-i18n="index.family">Famiglia</h3>
+                    <p data-i18n="index.familyText">Sara, Chiara e Rachele. La mia famiglia e il punto da cui guardo tutto il resto.</p>
+                    <span class="personal-arrow" aria-hidden="true">
+                        ↗
+                    </span>
+                </a>
+                <a class="personal-card" href="church.html">
+                    <span class="personal-icon" aria-hidden="true">
+                        ✴
+                    </span>
+                    <h3 data-i18n="index.faith">Fede</h3>
+                    <p data-i18n="index.faithText">Sono catechista nella mia parrocchia. Un impegno fatto di incontri, domande e ascolto.</p>
+                    <span class="personal-arrow" aria-hidden="true">
+                        ↗
+                    </span>
+                </a>
+                <div class="personal-card">
+                    <span class="personal-icon mountain-icon" aria-hidden="true">
+                        △
+                    </span>
+                    <h3 data-i18n="studio.beyondTitle">Montagna, piano, fotografia.</h3>
+                    <p data-i18n="index.elsewhereText">Le Alpi, il pianoforte classico e la fotografia: camminare, suonare, fermarmi a guardare.</p>
+                </div>
+            </div>
+            <div class="recognition">
+                <span aria-hidden="true">
+                    ↗
+                </span>
+                <span data-i18n="index.signal">Forbes Top 100 Under 30 Italia</span>
+                <span class="eyebrow" data-i18n="studio.recognition">Nel mio percorso</span>
+            </div>
         </section>
-
-        <!-- Social Links -->
-        <section class="content-section social-section">
-            <h2 class="section-heading" data-i18n="common.links">Links</h2>
-            <div class="social-grid">
-                <a class="social-link" href="https://gravatar.com/adrenocortico" rel="me noopener" target="_blank">
-                    <i class="fa-brands fa-grav"></i>
-                    <span>Gravatar</span>
+        <section class="contact-section container" aria-labelledby="contact-title">
+            <span class="eyebrow" data-i18n="studio.contactLabel">04 / Per incontrarci</span>
+            <h2 id="contact-title" data-i18n="studio.contactTitle" data-i18n-html>Le cose iniziano<br>con un <em>ciao.</em></h2>
+            <a class="contact-email" href="mailto:francesco@dulio.it">
+                francesco@dulio.it
+                <span aria-hidden="true">
+                    ↗
+                </span>
+            </a>
+            <div class="contact-bottom">
+                <p data-i18n="studio.contactText">Per confrontarci su un’impresa, un prodotto o un progetto da far crescere. Scrivimi.</p>
+                <a class="text-link" href="http://cal.assistudiovigevano.com/francesco" target="_blank" rel="noopener">
+                    <span data-i18n="studio.meeting">Troviamo un momento</span>
+                    ↗
                 </a>
-                <a class="social-link" href="https://github.com/adrenocortico" rel="me noopener" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                    <span>GitHub</span>
-                </a>
-                <a class="social-link" href="https://instagram.com/adrenocortico" rel="me noopener" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                    <span>Instagram</span>
-                </a>
-                <a class="social-link" href="https://x.com/adrenocortico" rel="me noopener" target="_blank">
-                    <i class="fa-brands fa-x-twitter"></i>
-                    <span>X</span>
-                </a>
-                <a class="social-link" href="https://stackoverflow.com/users/4869820/adrenocortico" rel="me noopener"
+            </div>
+            <div class="social-details" aria-labelledby="social-title">
+                <h3 class="social-heading" id="social-title" data-i18n="studio.online">Mi trovi anche qui</h3>
+                <div class="social-grid">
+                    <a class="social-link" href="https://gravatar.com/adrenocortico" rel="me noopener" target="_blank">
+                        <i class="fa-brands fa-grav" aria-hidden="true">
+                        </i>
+                        <span>
+                            Gravatar
+                        </span>
+                    </a>
+                    <a class="social-link" href="https://github.com/adrenocortico" rel="me noopener" target="_blank">
+                        <i class="fa-brands fa-github" aria-hidden="true">
+                        </i>
+                        <span>
+                            GitHub
+                        </span>
+                    </a>
+                    <a class="social-link" href="https://instagram.com/adrenocortico" rel="me noopener" target="_blank">
+                        <i class="fa-brands fa-instagram" aria-hidden="true">
+                        </i>
+                        <span>
+                            Instagram
+                        </span>
+                    </a>
+                    <a class="social-link" href="https://x.com/adrenocortico" rel="me noopener" target="_blank">
+                        <i class="fa-brands fa-x-twitter" aria-hidden="true">
+                        </i>
+                        <span>
+                            X
+                        </span>
+                    </a>
+                    <a class="social-link" href="https://stackoverflow.com/users/4869820/adrenocortico" rel="me noopener"
                     target="_blank">
-                    <i class="fa-brands fa-stack-overflow"></i>
-                    <span>Stack Overflow</span>
-                </a>
-                <a class="social-link" href="https://threads.net/adrenocortico" rel="me noopener" target="_blank">
-                    <i class="fa-brands fa-threads"></i>
-                    <span>Threads</span>
-                </a>
-                <a class="social-link" href="https://www.linkedin.com/in/francescodulio" rel="me noopener"
+                        <i class="fa-brands fa-stack-overflow" aria-hidden="true">
+                        </i>
+                        <span>
+                            Stack Overflow
+                        </span>
+                    </a>
+                    <a class="social-link" href="https://threads.net/adrenocortico" rel="me noopener" target="_blank">
+                        <i class="fa-brands fa-threads" aria-hidden="true">
+                        </i>
+                        <span>
+                            Threads
+                        </span>
+                    </a>
+                    <a class="social-link" href="https://www.linkedin.com/in/francescodulio" rel="me noopener"
                     target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
-                    <span>LinkedIn</span>
-                </a>
-                <a class="social-link" href="https://tiktok.com/@adrenocortico" rel="me noopener" target="_blank">
-                    <i class="fa-brands fa-tiktok"></i>
-                    <span>TikTok</span>
-                </a>
-                <a class="social-link" href="https://www.flickr.com/people/48243346@N03" rel="me noopener"
+                        <i class="fa-brands fa-linkedin" aria-hidden="true">
+                        </i>
+                        <span>
+                            LinkedIn
+                        </span>
+                    </a>
+                    <a class="social-link" href="https://tiktok.com/@adrenocortico" rel="me noopener" target="_blank">
+                        <i class="fa-brands fa-tiktok" aria-hidden="true">
+                        </i>
+                        <span>
+                            TikTok
+                        </span>
+                    </a>
+                    <a class="social-link" href="https://www.flickr.com/people/48243346@N03" rel="me noopener"
                     target="_blank">
-                    <i class="fa-brands fa-flickr"></i>
-                    <span>Flickr</span>
-                </a>
-                <a class="social-link" href="https://mastodon.social/@adrenocortico" rel="me noopener" target="_blank">
-                    <i class="fa-brands fa-mastodon"></i>
-                    <span>Mastodon</span>
-                </a>
-                <a class="social-link" href="https://twitch.tv/adrenocortico" rel="me noopener" target="_blank">
-                    <i class="fa-brands fa-twitch"></i>
-                    <span>Twitch</span>
-                </a>
-                <a class="social-link" href="https://gitlab.com/Adrenocortico" rel="me noopener" target="_blank">
-                    <i class="fa-brands fa-gitlab"></i>
-                    <span>GitLab</span>
-                </a>
-                <a class="social-link" href="https://open.spotify.com/user/1166796929" rel="me noopener"
+                        <i class="fa-brands fa-flickr" aria-hidden="true">
+                        </i>
+                        <span>
+                            Flickr
+                        </span>
+                    </a>
+                    <a class="social-link" href="https://mastodon.social/@adrenocortico" rel="me noopener" target="_blank">
+                        <i class="fa-brands fa-mastodon" aria-hidden="true">
+                        </i>
+                        <span>
+                            Mastodon
+                        </span>
+                    </a>
+                    <a class="social-link" href="https://twitch.tv/adrenocortico" rel="me noopener" target="_blank">
+                        <i class="fa-brands fa-twitch" aria-hidden="true">
+                        </i>
+                        <span>
+                            Twitch
+                        </span>
+                    </a>
+                    <a class="social-link" href="https://gitlab.com/Adrenocortico" rel="me noopener" target="_blank">
+                        <i class="fa-brands fa-gitlab" aria-hidden="true">
+                        </i>
+                        <span>
+                            GitLab
+                        </span>
+                    </a>
+                    <a class="social-link" href="https://open.spotify.com/user/1166796929" rel="me noopener"
                     target="_blank">
-                    <i class="fa-brands fa-spotify"></i>
-                    <span>Spotify</span>
-                </a>
-                <a class="social-link" href="https://www.strava.com/athletes/fdulio" rel="me noopener" target="_blank">
-                    <i class="fa-brands fa-strava"></i>
-                    <span>Strava</span>
-                </a>
-                <a class="social-link" href="https://calendly.com/francesco-dulio" rel="me noopener" target="_blank">
-                    <i class="fa-solid fa-calendar-days"></i>
-                    <span>Calendly</span>
-                </a>
-                <a class="social-link" href="https://app.foursquare.com/user/3163844" rel="me noopener" target="_blank">
-                    <i class="fa-brands fa-foursquare"></i>
-                    <span>Foursquare</span>
-                </a>
-                <a class="social-link" href="https://support.gravatar.com/profiles/verified-accounts/#facebook"
+                        <i class="fa-brands fa-spotify" aria-hidden="true">
+                        </i>
+                        <span>
+                            Spotify
+                        </span>
+                    </a>
+                    <a class="social-link" href="https://www.strava.com/athletes/fdulio" rel="me noopener" target="_blank">
+                        <i class="fa-brands fa-strava" aria-hidden="true">
+                        </i>
+                        <span>
+                            Strava
+                        </span>
+                    </a>
+                    <a class="social-link" href="http://cal.assistudiovigevano.com/francesco" rel="me noopener" target="_blank">
+                        <i class="fa-solid fa-calendar-days" aria-hidden="true">
+                        </i>
+                        <span>
+                            Cal.com
+                        </span>
+                    </a>
+                    <a class="social-link" href="https://app.foursquare.com/user/3163844" rel="me noopener" target="_blank">
+                        <i class="fa-brands fa-foursquare" aria-hidden="true">
+                        </i>
+                        <span>
+                            Foursquare
+                        </span>
+                    </a>
+                    <a class="social-link" href="https://support.gravatar.com/profiles/verified-accounts/#facebook"
                     rel="me noopener" target="_blank">
-                    <i class="fa-brands fa-facebook"></i>
-                    <span>Facebook</span>
-                </a>
+                        <i class="fa-brands fa-facebook" aria-hidden="true">
+                        </i>
+                        <span>
+                            Facebook
+                        </span>
+                    </a>
+                </div>
             </div>
         </section>
-
-        <!-- Navigation to Other Pages -->
-        <section class="explore-section">
-            <p class="explore-label" data-i18n="common.explore">Explore</p>
+        <section class="explore-section container">
+            <p class="explore-label" data-i18n="common.explore">Esplora</p>
             <nav class="explore-nav">
-                <a href="entrepreneurship">Entrepreneurship</a>
-                <a href="insurance">Insurance</a>
-                <a href="finance">Finance</a>
-                <a href="software">Software</a>
-                <a href="projects">Projects</a>
-                <a href="palio">Palio</a>
-                <a href="church">Church</a>
-                <a href="family">Family</a>
+                <a href="entrepreneurship.html">Impresa</a>
+                <a href="insurance.html">Assicurazioni</a>
+                <a href="finance.html">Finanza</a>
+                <a href="software.html">Software</a>
+                <a href="projects.html">Progetti</a>
+                <a href="palio.html">Palio</a>
+                <a href="church.html">Fede</a>
+                <a href="family.html">Famiglia</a>
             </nav>
         </section>
     </main>
-
-    <div id="footer"></div>
-
-    <script src="scripts/main.js"></script>
+    <div id="footer">
+    </div>
+    <script src="scripts/main.js">
+    </script>
 </body>
-
 </html>

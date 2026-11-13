@@ -2,24 +2,26 @@
   "meta": {
     "lang": "en",
     "description": {
-      "index": "Francesco Dulio - Building complex systems in ambiguous contexts. Working at the intersection of vision, decisions, and delivery.",
-      "family": "Family - Francesco Dulio. What matters most.",
-      "insurance": "Insurance Innovation - Francesco Dulio. Technology and Trust in Insurance.",
-      "entrepreneurship": "Entrepreneurial Journey - Francesco Dulio. Innovation, Leadership, and Vision.",
-      "software": "Software Development - Francesco Dulio. Code, Innovation, and Problem Solving.",
-      "finance": "Financial Journey - Francesco Dulio. Markets, Innovation, and Digital Assets.",
-      "church": "My Journey in the Church - Francesco Dulio. Faith, Community, and Digital Innovation.",
-      "projects": "Projects & Vision - Francesco Dulio. Innovation, Creativity, and Future Goals."
+      "index": "I work across insurance, software and projects for the local community. I like following ideas from the first questions through the decisions needed to make them work.",
+      "family": "I’m Sara’s husband and Chiara and Rachele’s dad. My family gives meaning to the other parts of my life too.",
+      "insurance": "My insurance work spans Assistudio and Scegli Noi. I work on clients’ needs and how to organise services, people and tools to support them.",
+      "entrepreneurship": "I work on direction, people and product. I try to turn a need into a sustainable project, following the decisions and the work needed to carry it forward.",
+      "software": "Technical skills are part of how I approach business. They let me connect people’s needs to product decisions, assess feasibility and take part in building the solution.",
+      "finance": "I’m interested in how numbers connect to decisions: time, risk, available resources and the effects of our choices. That curiosity also shapes the way I approach business.",
+      "church": "I’m a catechist in my parish. Accompanying young people is an important part of my life: time to listen, ask questions and explore together.",
+      "projects": "Business, product and organisation are parts of my work. Here are some of the settings I contribute to, what I work on and the tools I’ve built.",
+      "palio": "The Palio of Vigevano is one way I take part in my city’s life: through its people, its history and the work that brings everyone together each year."
     },
     "title": {
-      "index": "Francesco Dulio",
-      "family": "Family - Francesco",
-      "insurance": "Insurance Innovation - Francesco",
-      "entrepreneurship": "Entrepreneurship Journey - Francesco",
-      "software": "Software Development - Francesco",
-      "finance": "Financial Journey - Francesco",
-      "church": "My Journey in the Church - Francesco",
-      "projects": "Projects & Vision - Francesco"
+      "index": "Francesco Dulio — CEO, product and development",
+      "family": "Family — Francesco Dulio",
+      "insurance": "Insurance, Assistudio and Scegli Noi — Francesco Dulio",
+      "entrepreneurship": "Business, people and decisions — Francesco Dulio",
+      "software": "Product and software — Francesco Dulio",
+      "finance": "Finance and curiosity — Francesco Dulio",
+      "church": "Faith and community — Francesco Dulio",
+      "projects": "Projects — Francesco Dulio",
+      "palio": "Palio of Vigevano — Francesco Dulio"
     }
   },
   "nav": {
@@ -27,7 +29,7 @@
     "insurance": "Insurance",
     "entrepreneurship": "Entrepreneurship",
     "software": "Software",
-    "church": "Church",
+    "church": "Faith",
     "finance": "Finance",
     "projects": "Projects",
     "palio": "Palio",
@@ -38,7 +40,7 @@
     "closeMenu": "Close menu"
   },
   "footer": {
-    "copyright": "Francesco Dulio. Crafted with passion."
+    "copyright": "Francesco Dulio · Vigevano"
   },
   "common": {
     "explore": "Explore",
@@ -53,11 +55,25 @@
     "assistudio": "Assistudio",
     "pensioni": "Pension calculator",
     "agencyChat": "Agency quotes & management",
-    "catnat": "CatNat"
+    "catnat": "CatNat",
+    "palioRegia": "Control room",
+    "palioDirettivo": "Board",
+    "palioContrade": "Contrade",
+    "palioAbiti": "Costumes",
+    "palioGiochi": "Games",
+    "palioGiocatori": "Players",
+    "assistudioClienti": "Client portal",
+    "assistudioSinistri": "Claims",
+    "assistudioCai": "CAI",
+    "familyCase": "Homes",
+    "familyAgenda": "Children’s calendar",
+    "familyScuola": "School",
+    "scegliNoi": "Scegli Noi",
+    "scegliNoiAxa": "Scegli Noi on AXA"
   },
   "index": {
-    "heroOpening": "Building complex systems in ambiguous contexts.",
-    "heroSupporting": "I work at the intersection of vision, decisions, and delivery—where structure is missing and responsibility matters.",
+    "heroOpening": "I build businesses. I work with people and products. I also write code.",
+    "heroSupporting": "I work across insurance, software and projects for the local community. I like following ideas from the first questions through the decisions needed to make them work.",
     "whatIWorkOn": "What I work on",
     "whatIWorkOnList": [
       "Multi-stakeholder systems where alignment isn't given",
@@ -71,7 +87,7 @@
     "activityIsicoTitle": "ISICO",
     "activityIsicoText": "Italian Scientific Institute for the Spine: non-surgical spine rehabilitation, research, and training.",
     "activityScegliNoiTitle": "Scegli Noi",
-    "activityScegliNoiText": "Network of multi-agency insurance firms founded in 2021: professional collaboration and advisory across insurance, finance, and long-term rental.",
+    "activityScegliNoiText": "I’m a partner and insurance agent at Scegli Noi. It began in 2021 as a network of agencies in Lombardy and Veneto and has become a company with 10 insurance agents.",
     "activityStayActiveTitle": "StayActive",
     "activityStayActiveText": "Wearable device with an app that alerts incorrect posture via vibration. Project closed.",
     "howIWork": "How I work",
@@ -83,186 +99,199 @@
     ],
     "signature": "Physics mindset.<br>Piano discipline.<br>Always asking why.<br>Building for passion, not noise.",
     "family": "Family",
-    "familyText": "Married to Sara, physiotherapist. Father of Chiara and Rachele. The center of everything.",
+    "familyText": "Sara, Chiara and Rachele. My family, and the starting point for everything else.",
     "palio": "Palio",
-    "palioText": "President of the Palio of Vigevano since 2022. 50+ volunteers, 4 days of events, one historical race.",
+    "palioText": "My involvement in the Palio of Vigevano, through people, organisation and digital tools.",
     "faith": "Faith",
-    "faithText": "Catechist for teenagers in my parish. Sunday Mass, always.",
+    "faithText": "I’m a catechist in my parish. A commitment made of conversations, questions and listening.",
     "elsewhere": "Elsewhere",
-    "elsewhereText": "Alps in summer, classical piano since childhood, photography as observation.",
+    "elsewhereText": "The Alps, classical piano and photography: walking, playing, taking time to look.",
     "signal": "Forbes Top 100 Under 30 Italy"
   },
   "family": {
-    "heroOpening": "What matters most.",
-    "heroSupporting": "Married to Sara, physiotherapist. Father of Chiara and Rachele.",
-    "aboutUs": "About us",
+    "heroOpening": "Sara, Chiara, Rachele. Home.",
+    "heroSupporting": "I’m Sara’s husband and Chiara and Rachele’s dad. My family gives meaning to the other parts of my life too.",
+    "aboutUs": "Our family",
     "aboutUsList": [
-      "Sara is a physiotherapist. We met at university. Together since 2011, married since 2017.",
-      "Chiara and Rachele are our daughters. Raising them is the most important project.",
-      "We live in Vigevano, the town where the Palio happens and where our community is rooted.",
-      "Faith, education, and presence are the values we try to live—not just talk about."
+      "Sara is a physiotherapist. She’s my wife, and we share our life and the decisions that concern us.",
+      "Chiara and Rachele are our daughters. Being their dad is an essential part of who I am.",
+      "Vigevano is home: our life, work and many of the people I care about meet here.",
+      "I try to be present in the everyday things, including while I’m pursuing ideas and projects."
     ],
-    "foundation": "How we live",
+    "foundation": "Things I care about",
     "foundationList": [
-      "Sunday is for family and Mass—no exceptions",
-      "Dinner together, phones away",
-      "Vacations in the mountains: hiking, silence, disconnect",
-      "Decisions made together, even the hard ones"
+      "Time together, even when there’s nothing special planned.",
+      "The children’s questions, which often shift my point of view.",
+      "Mountains, walking and being outdoors.",
+      "Faith, and trying to put what I believe into practice."
     ],
-    "signature": "Mountains.<br>Piano.<br>Photography.<br>Time well spent."
+    "signature": "There’s something to learn every day.<br>About listening, changing plans,<br>and making room for others.",
+    "intro": "My urge to build things finds its way here as well: I’ve created tools for homes, the children’s calendar and school. They grow out of needs close to me, things I know from the inside."
   },
   "palioPage": {
-    "heroOpening": "Leading without formal authority.",
-    "heroSupporting": "A large-scale historical event operating in a non-hierarchical environment where vision and delivery must coexist.",
-    "theSystem": "The system",
+    "heroOpening": "A celebration we build together.",
+    "heroSupporting": "The Palio of Vigevano is one way I take part in my city’s life: through its people, its history and the work that brings everyone together each year.",
+    "theSystem": "The people behind it",
     "theSystemList": [
-      "Municipality, Province, local foundations—each with its own timeline and priorities",
-      "10+ sponsors to coordinate, from local businesses to institutional partners",
-      "50+ volunteers across logistics, communication, historical accuracy, safety",
-      "4 days of events, one historical horse race, 10,000+ visitors over the weekend"
+      "The contrade, with their people and their stories.",
+      "The volunteers and contributors looking after the many aspects of the event.",
+      "Institutions, sponsors and local organisations.",
+      "The participants and visitors who make the Palio a celebration for the city."
     ],
-    "myRole": "What I actually do",
+    "myRole": "My contribution",
     "myRoleList": [
-      "President since 2022. I'm responsible for the event happening—period.",
-      "I run weekly coordination meetings from March to October",
-      "I manage relationships with institutions, negotiate with sponsors, resolve conflicts",
-      "When something goes wrong during the event, I'm the one who decides—on the spot"
+      "Give the work direction, sharing priorities and responsibilities.",
+      "Follow relationships with institutions, sponsors and the people involved in the organisation.",
+      "Connect organisational needs to digital tools, contributing to their development too.",
+      "Handle unexpected issues, make decisions and collect what we can improve for the next edition."
     ],
-    "signature": "Real logistical risk.<br>Real organizational complexity.<br>Real public exposure.<br>Leadership without formal authority."
+    "signature": "Behind a day of celebration<br>are many people.<br>I’m glad to be one of them.",
+    "intro": "I’m president of Associazione Sforzinda, which organises the Palio of Vigevano. Alongside the organisational work, I build digital tools. It means moving between meetings and practical issues on the ground, with people giving their time."
   },
   "insurance": {
-    "heroOpening": "Bringing clarity to protection.",
-    "heroSupporting": "Insurance is trust translated into systems. I work on bridging traditional values with modern tools—making protection more accessible without losing what matters.",
-    "myApproach": "My approach",
+    "heroOpening": "Insurance starts with people.",
+    "heroSupporting": "My insurance work spans Assistudio and Scegli Noi. I work on clients’ needs and how to organise services, people and tools to support them.",
+    "myApproach": "Service and organisation",
     "myApproachList": [
-      "Traditional protection values combined with innovative technology",
-      "Making insurance more accessible and understandable",
-      "Building efficient digital solutions that serve real needs",
-      "Putting transparency at the center of every interaction"
+      "Understand clients’ needs and make them clear to the people handling them.",
+      "Choose which processes to improve and which tools are actually needed.",
+      "Clarify responsibilities and handovers between the people involved.",
+      "Assess the work over time, considering service quality and available resources."
     ],
-    "techIntegration": "Technology integration",
+    "techIntegration": "Decisions become tools",
     "techIntegrationList": [
-      "AI-driven risk assessment for better accuracy",
-      "Digital claims processing that respects people's time",
-      "Smart contract implementation for transparent agreements",
-      "Data analytics that improves coverage, not just profits"
+      "A client portal and dedicated tools for claims.",
+      "Quotes, enquiries and automation of repetitive steps.",
+      "Tools for pension calculations and completing the CAI accident statement.",
+      "Service integrations that need attention and corrections after going online."
     ],
-    "signature": "Personalized solutions.<br>Transparent communication.<br>Continuous support.<br>Protection that evolves with life.",
-    "lookingAhead": "Looking ahead",
+    "signature": "Listen to the question.<br>Make the steps clear.<br>Follow what happens next.",
+    "lookingAhead": "Working with other professionals",
     "lookingAheadList": [
-      "Digital innovation that serves human needs",
-      "Process automation without losing the personal touch",
-      "Customer experience that builds trust over time",
-      "Risk management that adapts to a changing world"
-    ]
+      "At Assistudio, decisions meet the everyday work of clients and colleagues.",
+      "At Scegli Noi I’m a partner and insurance agent, working with a company of 10 insurance agents.",
+      "I’m interested in ways of collaborating that make roles and handovers clearer.",
+      "Software supports those decisions and needs the same attention after going online."
+    ],
+    "intro": "I’m a partner in Assistudio Vigevano and a partner and insurance agent at Scegli Noi. I work both with people and their enquiries and on how we organise ourselves to support them. This is where business responsibilities meet my ability to work directly on processes and software."
   },
   "entrepreneurship": {
-    "heroOpening": "Building what doesn't exist yet.",
-    "heroSupporting": "Entrepreneurship is about creating meaningful impact in spaces where others see only problems. I focus on technology that solves real needs, not just theoretical ones.",
-    "stayActive": "StayActive",
+    "heroOpening": "Business means connecting decisions.",
+    "heroSupporting": "I work on direction, people and product. I try to turn a need into a sustainable project, following the decisions and the work needed to carry it forward.",
+    "stayActive": "StayActive / a closed chapter",
     "stayActiveList": [
-      "CEO leading innovation initiatives",
-      "Combining technology with practical solutions",
-      "Creating meaningful impact through action",
-      "Building systems that last beyond the hype"
+      "I led a startup exploring technology, health and posture.",
+      "The project combined a wearable device and an app to alert users to incorrect posture.",
+      "I followed the work from idea to product, alongside the people involved.",
+      "StayActive has closed. It remains part of what I’ve learned about products, limits and responsibility."
     ],
-    "howIBuild": "How I build",
+    "howIBuild": "The decisions I work on",
     "howIBuildList": [
-      "Identifying opportunities others overlook",
-      "Creating sustainable solutions, not quick fixes",
-      "Building strong teams with shared values",
-      "Driving change that matters, not just change"
+      "Identify the need and decide whom we want to help.",
+      "Choose priorities with time, resources and financial sustainability in mind.",
+      "Connect people’s needs to product and organisational decisions.",
+      "Follow execution and revisit assumptions in light of the results."
     ],
-    "signature": "Data-driven decisions.<br>Agile methodology.<br>Customer-centric approach.<br>Continuous innovation without noise.",
-    "teamPhilosophy": "Team philosophy",
+    "signature": "A direction to choose.<br>People to work with.<br>Results to take responsibility for.",
+    "teamPhilosophy": "The people I build with",
     "teamPhilosophyList": [
-      "Shared vision and values as the foundation",
-      "Empowerment and trust over micromanagement",
-      "Continuous learning as a way of working",
-      "Open communication without hierarchy barriers"
-    ]
+      "Share the reasons behind decisions and the goals we’re working towards.",
+      "Clarify responsibilities, room for autonomy and limits, including my own.",
+      "Listen to people who know a problem from a different angle.",
+      "Create the conditions to work together and recognise others’ contributions."
+    ],
+    "intro": "What interests me is the connection between an idea and the reality of an organisation: what we choose to do, with whom, with which resources and with which responsibilities. Being able to develop software helps me assess how to build it too.",
+    "currentTitle": "Today’s work",
+    "currentText": "I’m a partner in Assistudio Vigevano and a partner and insurance agent at Scegli Noi. At Scegli Noi, the business network has grown into a company with 10 insurance agents: a journey connecting agency work, professional collaboration and organisational decisions."
   },
   "software": {
-    "heroOpening": "Code as a means, not an end.",
-    "heroSupporting": "I write software to solve real problems—automating what's tedious, connecting what's fragmented, and building what doesn't exist yet.",
-    "philosophy": "Philosophy",
+    "heroOpening": "From need to product. Down to the code.",
+    "heroSupporting": "Technical skills are part of how I approach business. They let me connect people’s needs to product decisions, assess feasibility and take part in building the solution.",
+    "philosophy": "Decisions before code",
     "philosophyList": [
-      "Focus on automation and efficiency",
-      "Practical solutions with innovative technology",
-      "Solving real-world problems, not theoretical exercises",
-      "Building for durability, not demonstration"
+      "Clarify the need, the people we’re building for and the intended outcome.",
+      "Choose the scope of a first version and what to postpone.",
+      "Assess feasibility, costs and maintenance alongside the user experience.",
+      "Consider readability and accessibility in product decisions."
     ],
-    "techStack": "Tech stack",
+    "techStack": "When it’s time to get into the details",
     "techStackList": [
-      "Python for automation and machine learning",
-      "Swift for iOS development",
-      "Bash for system scripting",
-      "AI and ML frameworks for intelligent solutions"
+      "Swift for applications in the Apple ecosystem.",
+      "JavaScript and TypeScript for websites, web applications and integrations.",
+      "Python for scripts and automation.",
+      "Bash, APIs and AI tools when they help address the problem."
     ],
-    "signature": "Process automation.<br>AI integration.<br>Workflow optimization.<br>Systems that work while you sleep.",
-    "whatIBuild": "What I build",
+    "signature": "Choose what to build.<br>Understand how to make it.<br>Follow it as people use it.",
+    "whatIBuild": "Products and settings I contribute to",
     "whatIBuildList": [
-      "Custom automation solutions for complex workflows",
-      "AI-powered applications that learn and adapt",
-      "Digital transformation tools for traditional industries",
-      "Integration systems that connect disparate platforms"
-    ]
+      "Into ISICOApp, supporting clinical and rehabilitation journeys.",
+      "Into Assistudio’s tools for clients, claims and agency work.",
+      "Into the websites and applications supporting the Palio’s organisation.",
+      "Into family projects, from homes to the children’s calendar and school."
+    ],
+    "intro": "I write code and work on the decisions that come before and after it: what is worth building, for whom, with which priorities and how to maintain it. My interest in physics is there too, in wanting to understand mechanisms and their limits.",
+    "isicoTitle": "One example: ISICOApp",
+    "isicoText": "I work on an app used by patients and professionals. That means thinking about clear steps, text size and the experience on iPhone, iPad and Apple Watch. These are aspects to keep working on, listening to the needs of the people using the app."
   },
   "finance": {
-    "heroOpening": "Understanding money as a system.",
-    "heroSupporting": "Finance is where risk meets opportunity. I approach markets with analytical rigor, technological tools, and a long-term perspective that looks beyond daily noise.",
-    "financialMarkets": "Financial markets",
+    "heroOpening": "Understanding choices about the future.",
+    "heroSupporting": "I’m interested in how numbers connect to decisions: time, risk, available resources and the effects of our choices. That curiosity also shapes the way I approach business.",
+    "financialMarkets": "Questions that interest me",
     "financialMarketsList": [
-      "Traditional analysis enhanced with modern technology",
-      "Exploring new opportunities with careful evaluation",
-      "Building sustainable growth strategies",
-      "Understanding risk before seeking return"
+      "What resources does a decision require, now and over time?",
+      "What assumptions sit behind a number or a simulation?",
+      "How much room are we allowing for uncertainty?",
+      "How do we make the reasoning clear to the people deciding?"
     ],
-    "digitalAssets": "Digital assets",
+    "digitalAssets": "Numbers and tools",
     "digitalAssetsList": [
-      "Cryptocurrency markets and emerging trends",
-      "NFT technology and practical applications",
-      "Blockchain innovations beyond the hype",
-      "DeFi opportunities with measured approach"
+      "Gather information that helps describe a situation.",
+      "Make the assumptions behind a simulation explicit.",
+      "Use software to make complex questions easier to explore.",
+      "Read results with the model’s limits in mind."
     ],
-    "signature": "AI-driven analysis.<br>Systematic approaches.<br>Risk-aware decisions.<br>Long-term thinking in short-term markets.",
-    "riskManagement": "Risk management",
+    "signature": "I’m interested in numbers.<br>And even more in the questions<br>behind them.",
+    "riskManagement": "How it connects to the rest",
     "riskManagementList": [
-      "Portfolio diversification as a foundation",
-      "Risk assessment before opportunity assessment",
-      "Market analysis that acknowledges uncertainty",
-      "Long-term planning with flexibility built in"
-    ]
+      "To insurance, through the relationship between choices, risk and protection.",
+      "To software, through turning a calculation into a usable tool.",
+      "To business, through decisions made with limited resources and information.",
+      "To everyday life, because different needs sit behind each scenario."
+    ],
+    "intro": "A project requires choosing where to put time and resources, which assumptions to make and how much room to leave for uncertainty. I want to make those lines of reasoning explicit and comparable, including through the tools I build.",
+    "exampleTitle": "A project: the pension calculator",
+    "exampleText": "Among the tools I’ve built for Assistudio is a pension calculator. It’s an example of how my interest in numbers meets building a practical application."
   },
   "church": {
-    "heroOpening": "Faith as foundation, not formality.",
-    "heroSupporting": "The Church is where I find purpose beyond work. I'm committed to bringing traditional values into contemporary contexts—making faith accessible without diluting what matters.",
-    "myRole": "My role",
+    "heroOpening": "Faith grows through encounters too.",
+    "heroSupporting": "I’m a catechist in my parish. Accompanying young people is an important part of my life: time to listen, ask questions and explore together.",
+    "myRole": "My involvement",
     "myRoleList": [
-      "Catechist for young people (12-24 years) in my parish since 2015",
-      "Weekly meetings with a group of about 15 young people",
-      "Part of the pastoral council for youth ministry",
-      "Sunday Mass is non-negotiable—it's where the week begins"
+      "Serving as a catechist with the young people in my parish.",
+      "Meeting and discussing the questions they bring.",
+      "Taking part in the life of the community.",
+      "Mass and the time I make for faith in my week."
     ],
-    "youthEducation": "What I do with them",
+    "youthEducation": "The young people’s questions",
     "youthEducationList": [
-      "We read scripture and discuss what it means for their lives—not abstract theology",
-      "We talk about real questions: relationships, doubt, meaning, choices",
-      "We organize retreats, service projects, and moments of reflection",
-      "I listen more than I teach. Their questions are often better than my answers."
+      "What does the Gospel have to do with our lives?",
+      "How do we face doubts, choices and relationships?",
+      "How do we make room for someone who finds it harder to speak?",
+      "What can I learn from the way they see things?"
     ],
-    "signature": "Digital pastoral innovation.<br>Faith and technology connected.<br>Community engagement online and offline.<br>Change from within, not from outside.",
-    "visionForChange": "Vision for change",
+    "signature": "Some questions<br>are worth walking<br>with others.",
+    "visionForChange": "What I try to bring",
     "visionForChangeList": [
-      "Evolving the Church from within, respectfully",
-      "Maintaining core values while adapting methods",
-      "Communication that speaks to today's world",
-      "Building bridges between generations"
-    ]
+      "Listening, including when I don’t immediately share a point of view.",
+      "Words that are understandable and connected to the life we’re living.",
+      "A willingness to have my own ideas questioned.",
+      "My practical skills, when they can help the community."
+    ],
+    "intro": "Faith shapes how I relate to others and the questions I ask myself. I don’t have a ready answer for everything. I want to be present, including when a conversation is difficult or remains open."
   },
   "projects": {
-    "heroOpening": "Turning ideas into systems.",
-    "heroSupporting": "This page is not a portfolio of experiments.",
+    "heroOpening": "From decisions to projects taking shape.",
+    "heroSupporting": "Business, product and organisation are parts of my work. Here are some of the settings I contribute to, what I work on and the tools I’ve built.",
     "title": "Projects",
     "introLine1": "It’s a selection of real systems I have built, led, or contributed to,",
     "introLine2": "in contexts where ambiguity, responsibility, and real-world consequences were present.",
@@ -275,7 +304,7 @@
     ],
     "examplesTitle": "Examples of real systems",
     "palioTitle": "Palio of Vigevano",
-    "palioIntro": "A large-scale historical and cultural event with strong public exposure, operating in a non-hierarchical and highly variable environment.",
+    "palioIntro": "As president of Associazione Sforzinda I work on the organisation of the Palio of Vigevano. Alongside coordination responsibilities, I’ve built websites and applications for the board, contrade, costumes, games and participants.",
     "palioSystemInvolves": "The system involves:",
     "palioSystemList": [
       "Public institutions",
@@ -292,8 +321,8 @@
       "Ensure continuity and reliability year after year"
     ],
     "palioClosing": "This is an example of leadership without formal authority, applied at real scale.",
-    "stayActiveTitle": "StayActive (closed project)",
-    "stayActiveIntro": "StayActive was a startup operating at the intersection of technology, health, and behavioral change.",
+    "stayActiveTitle": "StayActive / a closed chapter",
+    "stayActiveIntro": "A startup exploring technology, health and posture, with a wearable device and an app. The project has closed; it taught me a lot about the step from idea to product.",
     "stayActiveClosed": "The project is now closed, but it remains a formative experience.",
     "stayActiveRoleIntro": "I led the initiative end-to-end:",
     "stayActiveRoleList": [
@@ -307,8 +336,8 @@
       "Responsibility without guarantees"
     ],
     "stayActiveClosing": "StayActive shaped how I approach system design, decision-making under pressure, and the cost of real-world constraints.",
-    "healthcareTitle": "Healthcare & clinical software (ISICO)",
-    "healthcareIntro": "Consulting work at the intersection of software and healthcare, supporting clinical and rehabilitation workflows.",
+    "healthcareTitle": "ISICOApp / product and development",
+    "healthcareIntro": "I contribute to developing ISICOApp, supporting clinical and rehabilitation journeys. My work connects the needs of patients and professionals with interface decisions and software development.",
     "healthcareFocusIntro": "The focus has been on:",
     "healthcareFocusList": [
       "Translating complex clinical needs into usable systems",
@@ -316,8 +345,8 @@
       "Reliability in contexts where trust and accuracy are critical"
     ],
     "healthcareClosing": "This work reinforced a system-oriented approach in environments where errors have real consequences.",
-    "insuranceTitle": "Insurance & financial systems",
-    "insuranceIntro": "Ongoing involvement in insurance and financial organizations facing structural and technological transition.",
+    "insuranceTitle": "Assistudio / business and organisation",
+    "insuranceIntro": "I’m a partner in Assistudio. Alongside insurance work, I work on decisions about processes and tools for clients and colleagues. I’ve built applications for the client portal, claims, quotes, pensions and CAI accident statements.",
     "insuranceWorkIntro": "The work typically involves:",
     "insuranceWorkList": [
       "Redesigning processes where legacy structures no longer scale",
@@ -325,8 +354,8 @@
       "Supporting decision-making in contexts with economic exposure"
     ],
     "insuranceClosing": "The emphasis is always on making systems work, not just making them modern.",
-    "communityTitle": "Community & digital pastoral projects",
-    "communityIntro": "Design and support of digital initiatives within community and faith-based environments.",
+    "communityTitle": "Parish and community",
+    "communityIntro": "Serving as a catechist and taking part in parish life are parts of my experience. On the dedicated page I describe what I try to bring to my time with the young people.",
     "communitySystemsIntro": "These systems often operate:",
     "communitySystemsList": [
       "Without formal authority",
@@ -344,7 +373,7 @@
     ],
     "connectClosing": "That’s where I tend to operate best.",
     "githubTitle": "GitHub projects",
-    "githubIntro": "Public repositories updated directly from my GitHub profile.",
+    "githubIntro": "GitHub holds some of my code and other projects too. This list is loaded from my public repositories.",
     "githubAutoLabel": "Auto-updated",
     "githubProfile": "Open GitHub profile",
     "githubLoading": "Loading repositories...",
@@ -354,6 +383,69 @@
     "githubLanguage": "Language",
     "githubStars": "Stars",
     "githubUpdated": "Updated",
-    "githubUnknown": "Unknown"
+    "githubUnknown": "Unknown",
+    "familyToolsTitle": "Projects from home",
+    "familyToolsIntro": "Some tools I’ve built for my family: homes, the children’s calendar and school. Needs close to home also become opportunities to build something useful."
+  },
+  "studio": {
+    "location": "Vigevano, Italy",
+    "discipline": "Business · People · Product",
+    "intro": "Francesco Dulio / CEO & developer",
+    "heroOne": "I build businesses.",
+    "heroTwo": "I work with people<br>and products.",
+    "heroThree": "I also write code.",
+    "description": "I work across insurance, software and projects for the local community. I like following ideas from the first questions through the decisions needed to make them work.",
+    "exploreWork": "How I work",
+    "sayHello": "Let’s talk ↗",
+    "enterprise": "Business",
+    "community": "Community",
+    "sceneCaption": "Business, product and the ability to build it.",
+    "pauseMotion": "Pause animations",
+    "resumeMotion": "Resume animations",
+    "footnote": "From the first decisions to everyday work.",
+    "scroll": "Discover more",
+    "workLabel": "02 / Where the work takes shape",
+    "allProjects": "All projects",
+    "workTitle": "Business, product<br>and community.",
+    "workIntro": "My contribution depends on the context: organisation and business decisions, product development, or coordinating an event. I try to keep direction connected to what it takes to deliver.",
+    "healthCategory": "03 — Product / Software",
+    "healthText": "At ISICOApp I contribute to product development, translating the needs of patients and professionals into practical software and interface decisions.",
+    "healthTag": "Accessibility",
+    "insuranceCategory": "01 — Business / Organisation",
+    "insuranceText": "At Assistudio I connect insurance work, organisation and digital tools. Decisions about processes and software start with the needs of clients and colleagues.",
+    "insuranceTag": "Insurance",
+    "palioCategory": "04 — Place / Community",
+    "palioText": "As president of Sforzinda I work with the people, relationships and organisation behind the Palio. I also bring the ability to build the digital tools supporting that work.",
+    "palioTag": "Coordination",
+    "also": "Also along the way",
+    "closed": "/ project closed",
+    "automations": "Product & software ↗",
+    "methodLabel": "01 / Direction, people and decisions",
+    "methodTitle": "Understand the need.<br>Choose what to do.<br><em>Follow it through.</em>",
+    "methodDescription": "I bring needs, people and resources together. That means choosing priorities, working with time and financial constraints, and creating the conditions for collaboration. Technical skills let me get into the product and assess its details too.",
+    "methodOne": "Clarify the need, the goals and the resources available.",
+    "methodTwo": "Share priorities and responsibilities with the people involved.",
+    "methodThree": "Follow the results and revisit decisions when needed.",
+    "personalLabel": "03 / The rest of the story",
+    "personalTitle": "Work, and everything<br>around it.",
+    "personalIntro": "Family, faith, mountains and piano. These parts of my life also shape the way I work.",
+    "beyondTitle": "Mountains, piano, photography.",
+    "recognition": "Along the way",
+    "contactLabel": "04 / Getting in touch",
+    "contactTitle": "It all starts<br>with a <em>hello.</em>",
+    "contactText": "To discuss a business, a product or a project to develop. Write to me.",
+    "meeting": "Find a time to talk",
+    "online": "Find me elsewhere",
+    "reducedMotion": "Animations disabled by your system preferences",
+    "networkCategory": "02 — Business / Collaboration",
+    "networkText": "I’m a partner and insurance agent at Scegli Noi, a company of 10 agents that grew out of a business network. We work by sharing expertise and different perspectives.",
+    "networkTag": "Partner and agent",
+    "networkAgents": "Insurance agents"
+  },
+  "scegliNoi": {
+    "title": "Scegli Noi / partner and insurance agent",
+    "description": "I’m a partner and insurance agent at Scegli Noi. It began in 2021 as a network of agencies in Lombardy and Veneto and has become a company with 10 insurance agents.",
+    "approach": "I’m interested in the move from collaboration between separate businesses to a shared organisation: exchanging experience, making responsibilities clear and providing continuity for clients.",
+    "services": "Insurance work is at its core, alongside collaboration with other professionals, including financial advisory and long-term rental services."
   }
 }
